@@ -1,0 +1,203 @@
+import { Sparkles, Github, ExternalLink, Cpu, Brain, Zap } from 'lucide-react';
+import { useState } from 'react';
+
+interface Prototype {
+  id: number;
+  title: string;
+  description: string;
+  category: string;
+  demoUrl?: string;
+  githubUrl?: string;
+  tags: string[];
+  image?: string;
+}
+
+const prototypes: Prototype[] = [
+  {
+    id: 1,
+    title: 'Neural Style Transfer',
+    description: 'Transform images using deep learning to apply artistic styles in real-time.',
+    category: 'Computer Vision',
+    demoUrl: '#',
+    githubUrl: '#',
+    tags: ['TensorFlow', 'CNN', 'Image Processing'],
+  },
+  {
+    id: 2,
+    title: 'Sentiment Analyzer',
+    description: 'Advanced NLP model for analyzing sentiment in text with context-aware accuracy.',
+    category: 'NLP',
+    demoUrl: '#',
+    githubUrl: '#',
+    tags: ['Transformers', 'BERT', 'Python'],
+  },
+  {
+    id: 3,
+    title: 'Voice Clone AI',
+    description: 'Generate natural-sounding speech in any voice with just 10 seconds of audio.',
+    category: 'Speech Synthesis',
+    demoUrl: '#',
+    tags: ['Audio', 'Deep Learning', 'PyTorch'],
+  },
+];
+
+const categories = ['All', 'Computer Vision', 'NLP', 'Speech Synthesis', 'Reinforcement Learning'];
+
+function App() {
+  const [selectedCategory, setSelectedCategory] = useState('All');
+
+  const filteredPrototypes = selectedCategory === 'All'
+    ? prototypes
+    : prototypes.filter(p => p.category === selectedCategory);
+
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-slate-100">
+      {/* Header */}
+      <header className="border-b border-slate-200 bg-white/80 backdrop-blur-sm sticky top-0 z-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+          <div className="flex items-center justify-between">
+            <div className="flex items-center space-x-3">
+              <div className="p-2 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-xl">
+                <Brain className="w-6 h-6 text-white" />
+              </div>
+              <div>
+                <h1 className="text-2xl font-bold text-slate-900">Alec Tello Designs</h1>
+                <p className="text-sm text-slate-600">AI Prototypes & Experiments</p>
+              </div>
+            </div>
+            <a
+              href="#"
+              className="flex items-center space-x-2 px-4 py-2 bg-slate-900 text-white rounded-lg hover:bg-slate-800 transition-all duration-200 hover:scale-105"
+            >
+              <Github className="w-4 h-4" />
+              <span className="text-sm font-medium">GitHub</span>
+            </a>
+          </div>
+        </div>
+      </header>
+
+      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        {/* Hero Section */}
+        <div className="text-center mb-16">
+          <div className="inline-flex items-center space-x-2 px-4 py-2 bg-blue-100 text-blue-700 rounded-full mb-6">
+            <Sparkles className="w-4 h-4" />
+            <span className="text-sm font-medium">Cutting-Edge AI Research</span>
+          </div>
+          <h2 className="text-5xl font-bold text-slate-900 mb-4">
+            Exploring the Future of AI
+          </h2>
+          <p className="text-xl text-slate-600 max-w-2xl mx-auto leading-relaxed">
+            A collection of experimental prototypes pushing the boundaries of machine learning,
+            neural networks, and artificial intelligence.
+          </p>
+        </div>
+
+        {/* Category Filter */}
+        <div className="flex flex-wrap gap-3 mb-12 justify-center">
+          {categories.map((category) => (
+            <button
+              key={category}
+              onClick={() => setSelectedCategory(category)}
+              className={`px-5 py-2.5 rounded-lg font-medium transition-all duration-200 ${
+                selectedCategory === category
+                  ? 'bg-slate-900 text-white shadow-lg scale-105'
+                  : 'bg-white text-slate-700 hover:bg-slate-100 border border-slate-200'
+              }`}
+            >
+              {category}
+            </button>
+          ))}
+        </div>
+
+        {/* Prototypes Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {filteredPrototypes.map((prototype) => (
+            <div
+              key={prototype.id}
+              className="group bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
+            >
+              {/* Card Header with Icon */}
+              <div className="bg-gradient-to-br from-slate-900 to-slate-700 p-8 relative overflow-hidden">
+                <div className="absolute top-0 right-0 w-32 h-32 bg-white/5 rounded-full -mr-16 -mt-16" />
+                <div className="absolute bottom-0 left-0 w-24 h-24 bg-white/5 rounded-full -ml-12 -mb-12" />
+                <div className="relative">
+                  <div className="w-12 h-12 bg-white/10 backdrop-blur-sm rounded-xl flex items-center justify-center mb-4">
+                    <Cpu className="w-6 h-6 text-white" />
+                  </div>
+                  <span className="inline-block px-3 py-1 bg-white/20 backdrop-blur-sm text-white text-xs font-medium rounded-full">
+                    {prototype.category}
+                  </span>
+                </div>
+              </div>
+
+              {/* Card Content */}
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-slate-900 mb-3 group-hover:text-blue-600 transition-colors">
+                  {prototype.title}
+                </h3>
+                <p className="text-slate-600 mb-4 leading-relaxed">
+                  {prototype.description}
+                </p>
+
+                {/* Tags */}
+                <div className="flex flex-wrap gap-2 mb-6">
+                  {prototype.tags.map((tag) => (
+                    <span
+                      key={tag}
+                      className="px-3 py-1 bg-slate-100 text-slate-700 text-xs font-medium rounded-lg"
+                    >
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+
+                {/* Actions */}
+                <div className="flex gap-3">
+                  {prototype.demoUrl && (
+                    <a
+                      href={prototype.demoUrl}
+                      className="flex-1 flex items-center justify-center space-x-2 px-4 py-2.5 bg-slate-900 text-white rounded-lg hover:bg-slate-800 transition-all duration-200 hover:scale-105"
+                    >
+                      <Zap className="w-4 h-4" />
+                      <span className="text-sm font-medium">Live Demo</span>
+                    </a>
+                  )}
+                  {prototype.githubUrl && (
+                    <a
+                      href={prototype.githubUrl}
+                      className="flex items-center justify-center px-4 py-2.5 bg-slate-100 text-slate-700 rounded-lg hover:bg-slate-200 transition-all duration-200"
+                    >
+                      <Github className="w-4 h-4" />
+                    </a>
+                  )}
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Empty State */}
+        {filteredPrototypes.length === 0 && (
+          <div className="text-center py-16">
+            <div className="w-16 h-16 bg-slate-100 rounded-full flex items-center justify-center mx-auto mb-4">
+              <Brain className="w-8 h-8 text-slate-400" />
+            </div>
+            <h3 className="text-xl font-semibold text-slate-900 mb-2">No prototypes found</h3>
+            <p className="text-slate-600">Try selecting a different category</p>
+          </div>
+        )}
+      </main>
+
+      {/* Footer */}
+      <footer className="border-t border-slate-200 bg-white/80 backdrop-blur-sm mt-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+          <p className="text-center text-slate-600">
+            Built with curiosity and a passion for AI innovation
+          </p>
+        </div>
+      </footer>
+    </div>
+  );
+}
+
+export default App;
