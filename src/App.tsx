@@ -20,7 +20,7 @@ const prototypes: Prototype[] = [
     category: 'Music',
     demoUrl: 'https://metronomegame-prototype.bolt.host',
     githubUrl: 'https://github.com/qgdkdzy6fv-cmd/AI-metronome',
-    tags: ['TensorFlow', 'CNN', 'Image Processing'],
+    tags: ['Rhythm Game', 'Music', 'Interactive'],
   },
   {
     id: 2,
