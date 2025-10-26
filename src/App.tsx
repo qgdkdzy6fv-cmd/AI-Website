@@ -121,7 +121,7 @@ function App() {
               {prototype.id === 1 ? (
                 <div className="relative h-52 bg-gradient-to-br from-emerald-50 to-blue-50 overflow-hidden flex items-center justify-center">
                   <div className="text-center p-8">
-                    <div className="w-16 h-16 bg-gradient-to-br from-emerald-500 to-green-600 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg">
+                    <div className="w-16 h-16 bg-gradient-to-br from-emerald-500 to-green-600 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg animate-pulse">
                       <Music className="w-8 h-8 text-white" />
                     </div>
                     <h4 className="text-lg font-bold text-slate-900 mb-2">Tempo Garden</h4>
