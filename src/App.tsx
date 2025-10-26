@@ -1,4 +1,4 @@
-import { Sparkles, Github, ExternalLink, Cpu, Brain, Zap } from 'lucide-react';
+import { Sparkles, Github, ExternalLink, Cpu, Brain, Zap, Music } from 'lucide-react';
 import { useState } from 'react';
 
 interface Prototype {
@@ -122,7 +122,7 @@ function App() {
                 <div className="relative h-52 bg-gradient-to-br from-emerald-50 to-blue-50 overflow-hidden flex items-center justify-center">
                   <div className="text-center p-8">
                     <div className="w-16 h-16 bg-gradient-to-br from-emerald-500 to-green-600 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg">
-                      <Zap className="w-8 h-8 text-white" />
+                      <Music className="w-8 h-8 text-white" />
                     </div>
                     <h4 className="text-lg font-bold text-slate-900 mb-2">Tempo Garden</h4>
                     <p className="text-sm text-slate-600">Play in tempo to grow your plant</p>
