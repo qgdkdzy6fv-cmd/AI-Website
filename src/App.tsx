@@ -29,7 +29,7 @@ const prototypes: Prototype[] = [
     category: 'Design',
     demoUrl: 'https://logocreator-prototype.bolt.host',
     githubUrl: 'https://github.com/qgdkdzy6fv-cmd/AI-Logo-Creator',
-    tags: ['Transformers', 'BERT', 'Python'],
+    tags: ['Logo Design', 'Minimalist', 'Creative'],
   },
   {
     id: 3,
