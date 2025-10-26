@@ -140,6 +140,27 @@ function App() {
                     </div>
                   </div>
                 </div>
+              ) : prototype.id === 2 ? (
+                <div className="relative h-52 bg-gradient-to-br from-slate-50 to-slate-100 overflow-hidden flex items-center justify-center">
+                  <div className="text-center p-8">
+                    <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-slate-700 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg">
+                      <Sparkles className="w-8 h-8 text-white" />
+                    </div>
+                    <h4 className="text-lg font-bold text-slate-900 mb-2">Logo Creator</h4>
+                    <p className="text-sm text-slate-600">Design your perfect logo</p>
+                  </div>
+                  <div className="absolute top-4 right-4">
+                    <span className="inline-block px-3 py-1 bg-slate-900/80 backdrop-blur-sm text-white text-xs font-medium rounded-full">
+                      {prototype.category}
+                    </span>
+                  </div>
+                  <div className="absolute bottom-4 left-4">
+                    <div className="flex items-center space-x-2 px-3 py-1.5 bg-white/90 backdrop-blur-sm rounded-lg">
+                      <div className="w-2 h-2 bg-blue-500 rounded-full animate-pulse" />
+                      <span className="text-xs font-medium text-slate-700">Live Preview</span>
+                    </div>
+                  </div>
+                </div>
               ) : (
                 <div className="bg-gradient-to-br from-slate-900 to-slate-700 p-8 relative overflow-hidden">
                   <div className="absolute top-0 right-0 w-32 h-32 bg-white/5 rounded-full -mr-16 -mt-16" />
