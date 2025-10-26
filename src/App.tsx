@@ -17,7 +17,7 @@ const prototypes: Prototype[] = [
     id: 1,
     title: 'Metronome Game Prototype',
     description: 'Transform images using deep learning to apply artistic styles in real-time.',
-    category: 'Computer Vision',
+    category: 'Music',
     demoUrl: 'https://metronomegame-prototype.bolt.host',
     githubUrl: 'https://github.com/qgdkdzy6fv-cmd/AI-metronome',
     tags: ['TensorFlow', 'CNN', 'Image Processing'],
