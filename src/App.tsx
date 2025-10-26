@@ -26,7 +26,7 @@ const prototypes: Prototype[] = [
     id: 2,
     title: 'Logo Creator Prototype',
     description: 'Advanced NLP model for analyzing sentiment in text with context-aware accuracy.',
-    category: 'NLP',
+    category: 'Design',
     demoUrl: 'https://logocreator-prototype.bolt.host',
     githubUrl: 'https://github.com/qgdkdzy6fv-cmd/AI-Logo-Creator',
     tags: ['Transformers', 'BERT', 'Python'],
