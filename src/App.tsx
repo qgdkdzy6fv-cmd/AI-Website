@@ -16,7 +16,7 @@ const prototypes: Prototype[] = [
   {
     id: 1,
     title: 'Metronome Game Prototype',
-    description: 'A rhythm game where matching the metronome tempo helps you grow a beautiful virtual garden.',
+    description: 'Find your flow, follow the metronome, and let your garden blossom with every perfect beat.',
     category: 'Music',
     demoUrl: 'https://metronomegame-prototype.bolt.host',
     githubUrl: 'https://github.com/qgdkdzy6fv-cmd/AI-metronome',
