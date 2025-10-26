@@ -122,7 +122,7 @@ function App() {
               {prototype.id === 1 ? (
                 <div className="relative h-64 bg-slate-100 overflow-hidden">
                   <img
-                    src={`https://api.screenshotmachine.com/?key=demo&url=${encodeURIComponent(prototype.demoUrl || '')}&dimension=1024x768&cacheLimit=0&random=${Date.now()}`}
+                    src="https://api.screenshotmachine.com/?key=demo&url=https%3A%2F%2Fmetronomegame-prototype.bolt.host&dimension=1024x768"
                     alt={`${prototype.title} preview`}
                     className="w-full h-full object-cover"
                     onError={(e) => {
