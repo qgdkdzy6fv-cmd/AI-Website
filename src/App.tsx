@@ -120,13 +120,14 @@ function App() {
             >
               {/* Card Header with Icon/Preview */}
               {prototype.id === 1 ? (
-                <div className="relative h-52 bg-slate-100 overflow-hidden">
-                  <img
-                    src="/Screenshot 2025-10-26 at 4.38.57 PM.png"
-                    alt={`${prototype.title} preview`}
-                    className="w-full h-full object-cover object-top"
-                    style={{ maxWidth: '800px', maxHeight: '400px' }}
-                  />
+                <div className="relative h-52 bg-gradient-to-br from-emerald-50 to-blue-50 overflow-hidden flex items-center justify-center">
+                  <div className="text-center p-8">
+                    <div className="w-16 h-16 bg-gradient-to-br from-emerald-500 to-green-600 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg">
+                      <Zap className="w-8 h-8 text-white" />
+                    </div>
+                    <h4 className="text-lg font-bold text-slate-900 mb-2">Tempo Garden</h4>
+                    <p className="text-sm text-slate-600">Play in tempo to grow your plant</p>
+                  </div>
                   <div className="absolute top-4 right-4">
                     <span className="inline-block px-3 py-1 bg-slate-900/80 backdrop-blur-sm text-white text-xs font-medium rounded-full">
                       {prototype.category}
