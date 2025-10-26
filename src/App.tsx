@@ -41,7 +41,7 @@ const prototypes: Prototype[] = [
   },
 ];
 
-const categories = ['All', 'Computer Vision', 'NLP', 'Speech Synthesis', 'Reinforcement Learning'];
+const categories = ['All', 'Design', 'Music', 'Speech Synthesis', 'Reinforcement Learning'];
 
 function App() {
   const [selectedCategory, setSelectedCategory] = useState('All');
