@@ -193,7 +193,7 @@ function App() {
                       rel="noopener noreferrer"
                       className="flex-1 flex items-center justify-center space-x-2 px-4 py-2.5 bg-slate-900 text-white rounded-lg hover:bg-slate-800 transition-all duration-200 hover:scale-105"
                     >
-                      <Zap className="w-4 h-4 text-green-400 animate-pulse-green" />
+                      <Zap className={`w-4 h-4 ${prototype.id === 1 ? 'text-green-400 animate-pulse-green' : prototype.id === 2 ? 'text-blue-400 animate-pulse-blue' : ''}`} />
                       <span className="text-sm font-medium">Live Demo</span>
                     </a>
                   )}
