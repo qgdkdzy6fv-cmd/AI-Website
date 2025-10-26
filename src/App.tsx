@@ -89,8 +89,7 @@ function App() {
             Exploring the Future of AI
           </h2>
           <p className="text-xl text-slate-600 max-w-2xl mx-auto leading-relaxed">
-            A collection of experimental prototypes pushing the boundaries of machine learning,
-            neural networks, and artificial intelligence.
+            A collection of experimental prototypes that push the boundaries of design and coding using artificial intelligence.
           </p>
         </div>
 
