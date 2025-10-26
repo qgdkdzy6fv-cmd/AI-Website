@@ -120,18 +120,12 @@ function App() {
             >
               {/* Card Header with Icon/Preview */}
               {prototype.id === 1 ? (
-                <div className="relative h-64 bg-slate-100 overflow-hidden">
+                <div className="relative h-52 bg-slate-100 overflow-hidden">
                   <img
-                    src="https://api.screenshotmachine.com/?key=demo&url=https%3A%2F%2Fmetronomegame-prototype.bolt.host&dimension=1024x768"
+                    src="/Screenshot 2025-10-26 at 4.38.57 PM.png"
                     alt={`${prototype.title} preview`}
-                    className="w-full h-full object-cover"
-                    onError={(e) => {
-                      // Fallback to gradient background if screenshot fails
-                      e.currentTarget.style.display = 'none';
-                      if (e.currentTarget.parentElement) {
-                        e.currentTarget.parentElement.className = 'relative h-64 bg-gradient-to-br from-slate-900 to-slate-700 flex items-center justify-center overflow-hidden';
-                      }
-                    }}
+                    className="w-full h-full object-cover object-top"
+                    style={{ maxWidth: '800px', maxHeight: '400px' }}
                   />
                   <div className="absolute top-4 right-4">
                     <span className="inline-block px-3 py-1 bg-slate-900/80 backdrop-blur-sm text-white text-xs font-medium rounded-full">
