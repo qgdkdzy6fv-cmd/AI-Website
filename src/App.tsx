@@ -15,20 +15,20 @@ interface Prototype {
 const prototypes: Prototype[] = [
   {
     id: 1,
-    title: 'Neural Style Transfer',
+    title: 'Metronome Game Prototype',
     description: 'Transform images using deep learning to apply artistic styles in real-time.',
     category: 'Computer Vision',
-    demoUrl: '#',
-    githubUrl: '#',
+    demoUrl: 'https://metronomegame-prototype.bolt.host',
+    githubUrl: 'https://github.com/qgdkdzy6fv-cmd/AI-metronome',
     tags: ['TensorFlow', 'CNN', 'Image Processing'],
   },
   {
     id: 2,
-    title: 'Sentiment Analyzer',
+    title: 'Logo Creator Prototype',
     description: 'Advanced NLP model for analyzing sentiment in text with context-aware accuracy.',
     category: 'NLP',
-    demoUrl: '#',
-    githubUrl: '#',
+    demoUrl: 'https://logocreator-prototype.bolt.host',
+    githubUrl: 'https://github.com/qgdkdzy6fv-cmd/AI-Logo-Creator',
     tags: ['Transformers', 'BERT', 'Python'],
   },
   {
@@ -66,11 +66,13 @@ function App() {
               </div>
             </div>
             <a
-              href="#"
+              href="https://github.com/qgdkdzy6fv-cmd/AI-Website"
+              target="_blank"
+              rel="noopener noreferrer"
               className="flex items-center space-x-2 px-4 py-2 bg-slate-900 text-white rounded-lg hover:bg-slate-800 transition-all duration-200 hover:scale-105"
             >
               <Github className="w-4 h-4" />
-              <span className="text-sm font-medium">GitHub</span>
+              <span className="text-sm font-medium">Website GitHub</span>
             </a>
           </div>
         </div>
@@ -116,19 +118,47 @@ function App() {
               key={prototype.id}
               className="group bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
             >
-              {/* Card Header with Icon */}
-              <div className="bg-gradient-to-br from-slate-900 to-slate-700 p-8 relative overflow-hidden">
-                <div className="absolute top-0 right-0 w-32 h-32 bg-white/5 rounded-full -mr-16 -mt-16" />
-                <div className="absolute bottom-0 left-0 w-24 h-24 bg-white/5 rounded-full -ml-12 -mb-12" />
-                <div className="relative">
-                  <div className="w-12 h-12 bg-white/10 backdrop-blur-sm rounded-xl flex items-center justify-center mb-4">
-                    <Cpu className="w-6 h-6 text-white" />
+              {/* Card Header with Icon/Preview */}
+              {prototype.id === 1 ? (
+                <div className="relative h-64 bg-slate-100 overflow-hidden">
+                  <img
+                    src={`https://api.screenshotmachine.com/?key=demo&url=${encodeURIComponent(prototype.demoUrl || '')}&dimension=1024x768&cacheLimit=0&random=${Date.now()}`}
+                    alt={`${prototype.title} preview`}
+                    className="w-full h-full object-cover"
+                    onError={(e) => {
+                      // Fallback to gradient background if screenshot fails
+                      e.currentTarget.style.display = 'none';
+                      if (e.currentTarget.parentElement) {
+                        e.currentTarget.parentElement.className = 'relative h-64 bg-gradient-to-br from-slate-900 to-slate-700 flex items-center justify-center overflow-hidden';
+                      }
+                    }}
+                  />
+                  <div className="absolute top-4 right-4">
+                    <span className="inline-block px-3 py-1 bg-slate-900/80 backdrop-blur-sm text-white text-xs font-medium rounded-full">
+                      {prototype.category}
+                    </span>
                   </div>
-                  <span className="inline-block px-3 py-1 bg-white/20 backdrop-blur-sm text-white text-xs font-medium rounded-full">
-                    {prototype.category}
-                  </span>
+                  <div className="absolute bottom-4 left-4">
+                    <div className="flex items-center space-x-2 px-3 py-1.5 bg-white/90 backdrop-blur-sm rounded-lg">
+                      <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse" />
+                      <span className="text-xs font-medium text-slate-700">Live Preview</span>
+                    </div>
+                  </div>
                 </div>
-              </div>
+              ) : (
+                <div className="bg-gradient-to-br from-slate-900 to-slate-700 p-8 relative overflow-hidden">
+                  <div className="absolute top-0 right-0 w-32 h-32 bg-white/5 rounded-full -mr-16 -mt-16" />
+                  <div className="absolute bottom-0 left-0 w-24 h-24 bg-white/5 rounded-full -ml-12 -mb-12" />
+                  <div className="relative">
+                    <div className="w-12 h-12 bg-white/10 backdrop-blur-sm rounded-xl flex items-center justify-center mb-4">
+                      <Cpu className="w-6 h-6 text-white" />
+                    </div>
+                    <span className="inline-block px-3 py-1 bg-white/20 backdrop-blur-sm text-white text-xs font-medium rounded-full">
+                      {prototype.category}
+                    </span>
+                  </div>
+                </div>
+              )}
 
               {/* Card Content */}
               <div className="p-6">
@@ -156,6 +186,8 @@ function App() {
                   {prototype.demoUrl && (
                     <a
                       href={prototype.demoUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="flex-1 flex items-center justify-center space-x-2 px-4 py-2.5 bg-slate-900 text-white rounded-lg hover:bg-slate-800 transition-all duration-200 hover:scale-105"
                     >
                       <Zap className="w-4 h-4" />
@@ -165,6 +197,8 @@ function App() {
                   {prototype.githubUrl && (
                     <a
                       href={prototype.githubUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="flex items-center justify-center px-4 py-2.5 bg-slate-100 text-slate-700 rounded-lg hover:bg-slate-200 transition-all duration-200"
                     >
                       <Github className="w-4 h-4" />
