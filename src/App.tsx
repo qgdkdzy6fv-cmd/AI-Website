@@ -132,12 +132,6 @@ function App() {
                       {prototype.category}
                     </span>
                   </div>
-                  <div className="absolute bottom-4 left-4">
-                    <div className="flex items-center space-x-2 px-3 py-1.5 bg-white/90 backdrop-blur-sm rounded-lg">
-                      <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse" />
-                      <span className="text-xs font-medium text-slate-700">Live Preview</span>
-                    </div>
-                  </div>
                 </div>
               ) : prototype.id === 2 ? (
                 <div className="relative h-52 bg-gradient-to-br from-slate-50 to-slate-100 overflow-hidden flex items-center justify-center">
@@ -152,12 +146,6 @@ function App() {
                     <span className="inline-block px-3 py-1 bg-slate-900/80 backdrop-blur-sm text-white text-xs font-medium rounded-full">
                       {prototype.category}
                     </span>
-                  </div>
-                  <div className="absolute bottom-4 left-4">
-                    <div className="flex items-center space-x-2 px-3 py-1.5 bg-white/90 backdrop-blur-sm rounded-lg">
-                      <div className="w-2 h-2 bg-blue-500 rounded-full animate-pulse" />
-                      <span className="text-xs font-medium text-slate-700">Live Preview</span>
-                    </div>
                   </div>
                 </div>
               ) : (
