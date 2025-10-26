@@ -83,7 +83,7 @@ function App() {
         <div className="text-center mb-16">
           <div className="inline-flex items-center space-x-2 px-4 py-2 bg-blue-100 text-blue-700 rounded-full mb-6">
             <Sparkles className="w-4 h-4" />
-            <span className="text-sm font-medium">Cutting-Edge AI Research</span>
+            <span className="text-sm font-medium">Crafted with AI</span>
           </div>
           <h2 className="text-5xl font-bold text-slate-900 mb-4">
             Exploring the Future of AI
