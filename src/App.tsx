@@ -40,14 +40,6 @@ const prototypes: Prototype[] = [
     githubUrl: 'https://github.com/qgdkdzy6fv-cmd/dice-rolling-prototype.git',
     tags: ['Gaming', 'Interactive', 'Physics'],
   },
-  {
-    id: 3,
-    title: 'Voice Clone AI',
-    description: 'Generate natural-sounding speech in any voice with just 10 seconds of audio.',
-    category: 'Speech Synthesis',
-    demoUrl: '#',
-    tags: ['Audio', 'Deep Learning', 'PyTorch'],
-  },
 ];
 
 const categories = ['All', 'Design', 'Music', 'Simulation', 'Speech Synthesis', 'Reinforcement Learning'];
