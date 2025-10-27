@@ -157,7 +157,7 @@ function App() {
                   </div>
                 </div>
               ) : prototype.id === 4 ? (
-                <div className="relative h-52 bg-gradient-to-br from-purple-50 to-pink-50 overflow-hidden flex items-center justify-center">
+                <div className="relative h-52 bg-gradient-to-br from-violet-100 to-purple-100 overflow-hidden flex items-center justify-center">
                   <div className="text-center p-8">
                     <div className="w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg" style={{ backgroundColor: '#8b5cf6' }}>
                       <Dices className="w-8 h-8 text-white" />
