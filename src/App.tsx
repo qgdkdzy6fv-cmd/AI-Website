@@ -34,7 +34,7 @@ const prototypes: Prototype[] = [
   {
     id: 4,
     title: 'Dice Roller Prototype',
-    description: 'Roll virtual dice with realistic physics and animations for your gaming needs.',
+    description: 'Let your imagination wander as you select your dice, then weave in modifiers along the way, perfectly crafting each roll.',
     category: 'Simulation',
     demoUrl: 'https://diceroller-prototype.bolt.host',
     githubUrl: 'https://github.com/qgdkdzy6fv-cmd/dice-rolling-prototype.git',
