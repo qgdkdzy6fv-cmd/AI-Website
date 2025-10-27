@@ -1,4 +1,4 @@
-import { Sparkles, Github, ExternalLink, Cpu, Brain, Zap, Music, Palette } from 'lucide-react';
+import { Sparkles, Github, ExternalLink, Cpu, Brain, Zap, Music, Palette, Dices } from 'lucide-react';
 import { useState } from 'react';
 
 interface Prototype {
@@ -35,7 +35,7 @@ const prototypes: Prototype[] = [
     id: 4,
     title: 'Dice Roller Prototype',
     description: 'Roll virtual dice with realistic physics and animations for your gaming needs.',
-    category: 'Game',
+    category: 'Simulation',
     demoUrl: 'https://diceroller-prototype.bolt.host',
     tags: ['Gaming', 'Interactive', 'Physics'],
   },
@@ -49,7 +49,7 @@ const prototypes: Prototype[] = [
   },
 ];
 
-const categories = ['All', 'Design', 'Music', 'Game', 'Speech Synthesis', 'Reinforcement Learning'];
+const categories = ['All', 'Design', 'Music', 'Simulation', 'Speech Synthesis', 'Reinforcement Learning'];
 
 function App() {
   const [selectedCategory, setSelectedCategory] = useState('All');
@@ -149,6 +149,21 @@ function App() {
                     </div>
                     <h4 className="text-lg font-bold text-slate-900 mb-2">Logo Creator</h4>
                     <p className="text-sm text-slate-600">Design your perfect logo</p>
+                  </div>
+                  <div className="absolute top-4 right-4">
+                    <span className="inline-block px-3 py-1 bg-slate-900/80 backdrop-blur-sm text-white text-xs font-medium rounded-full">
+                      {prototype.category}
+                    </span>
+                  </div>
+                </div>
+              ) : prototype.id === 4 ? (
+                <div className="relative h-52 bg-gradient-to-br from-purple-50 to-pink-50 overflow-hidden flex items-center justify-center">
+                  <div className="text-center p-8">
+                    <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-600 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg">
+                      <Dices className="w-8 h-8 text-white" />
+                    </div>
+                    <h4 className="text-lg font-bold text-slate-900 mb-2">Dice Roller</h4>
+                    <p className="text-sm text-slate-600">Roll dice with realistic physics</p>
                   </div>
                   <div className="absolute top-4 right-4">
                     <span className="inline-block px-3 py-1 bg-slate-900/80 backdrop-blur-sm text-white text-xs font-medium rounded-full">
