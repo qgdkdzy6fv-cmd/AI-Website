@@ -156,7 +156,7 @@ function App() {
                       <Dices className="w-8 h-8 text-white" />
                     </div>
                     <h4 className="text-lg font-bold text-slate-900 mb-2">Dice Roller</h4>
-                    <p className="text-sm text-slate-600">Roll dice with realistic physics</p>
+                    <p className="text-sm text-slate-600">Roll the dice to decide your fate</p>
                   </div>
                   <div className="absolute top-4 right-4">
                     <span className="inline-block px-3 py-1 bg-slate-900/80 backdrop-blur-sm text-white text-xs font-medium rounded-full">
