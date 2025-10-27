@@ -159,7 +159,7 @@ function App() {
               ) : prototype.id === 4 ? (
                 <div className="relative h-52 bg-gradient-to-br from-purple-50 to-pink-50 overflow-hidden flex items-center justify-center">
                   <div className="text-center p-8">
-                    <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-600 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg">
+                    <div className="w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg" style={{ backgroundColor: '#64748b' }}>
                       <Dices className="w-8 h-8 text-white" />
                     </div>
                     <h4 className="text-lg font-bold text-slate-900 mb-2">Dice Roller</h4>
