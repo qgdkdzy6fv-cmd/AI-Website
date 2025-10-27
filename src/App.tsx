@@ -142,7 +142,7 @@ function App() {
                   </div>
                 </div>
               ) : prototype.id === 2 ? (
-                <div className="relative h-52 bg-gradient-to-br from-slate-50 to-slate-100 overflow-hidden flex items-center justify-center">
+                <div className="relative h-52 bg-gradient-to-br from-blue-100 to-blue-200 overflow-hidden flex items-center justify-center">
                   <div className="text-center p-8">
                     <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-slate-700 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg">
                       <Palette className="w-8 h-8 text-white" />
