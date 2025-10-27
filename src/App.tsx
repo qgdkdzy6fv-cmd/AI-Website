@@ -38,7 +38,7 @@ const prototypes: Prototype[] = [
     category: 'Simulation',
     demoUrl: 'https://diceroller-prototype.bolt.host',
     githubUrl: 'https://github.com/qgdkdzy6fv-cmd/dice-rolling-prototype.git',
-    tags: ['Gaming', 'Interactive', 'Physics'],
+    tags: ['Gaming', 'Interactive', 'Simulation'],
   },
 ];
 
