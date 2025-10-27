@@ -32,6 +32,14 @@ const prototypes: Prototype[] = [
     tags: ['Logo Design', 'Minimalist', 'Creative'],
   },
   {
+    id: 4,
+    title: 'Dice Roller Prototype',
+    description: 'Roll virtual dice with realistic physics and animations for your gaming needs.',
+    category: 'Game',
+    demoUrl: 'https://diceroller-prototype.bolt.host',
+    tags: ['Gaming', 'Interactive', 'Physics'],
+  },
+  {
     id: 3,
     title: 'Voice Clone AI',
     description: 'Generate natural-sounding speech in any voice with just 10 seconds of audio.',
@@ -41,7 +49,7 @@ const prototypes: Prototype[] = [
   },
 ];
 
-const categories = ['All', 'Design', 'Music', 'Speech Synthesis', 'Reinforcement Learning'];
+const categories = ['All', 'Design', 'Music', 'Game', 'Speech Synthesis', 'Reinforcement Learning'];
 
 function App() {
   const [selectedCategory, setSelectedCategory] = useState('All');
