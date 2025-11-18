@@ -198,7 +198,7 @@ function App() {
                       <Code className="w-8 h-8 text-white" />
                     </div>
                     <h4 className="text-lg font-bold text-slate-900 mb-2">Mosaic Postcard Creator</h4>
-                    <p className="text-sm text-slate-600">Visualize your code structure</p>
+                    <p className="text-sm text-slate-600">Create mosaics for friends and family</p>
                   </div>
                   <div className="absolute top-4 right-4">
                     <span className="inline-block px-3 py-1 bg-slate-900/80 backdrop-blur-sm text-white text-xs font-medium rounded-full">
