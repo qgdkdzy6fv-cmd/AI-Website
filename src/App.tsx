@@ -1,4 +1,4 @@
-import { Sparkles, Github, ExternalLink, Cpu, Brain, Zap, Music, Palette, Dices } from 'lucide-react';
+import { Sparkles, Github, ExternalLink, Cpu, Brain, Zap, Music, Palette, Dices, Code, Gamepad2, Sparkle } from 'lucide-react';
 import { useState } from 'react';
 
 interface Prototype {
@@ -40,9 +40,30 @@ const prototypes: Prototype[] = [
     githubUrl: 'https://github.com/qgdkdzy6fv-cmd/dice-rolling-prototype.git',
     tags: ['Gaming', 'Interactive', 'Simulation'],
   },
+  {
+    id: 5,
+    title: 'Code Visualizer',
+    description: 'Transform your code into beautiful visual diagrams and gain insights into your project architecture.',
+    category: 'Development',
+    tags: ['Development', 'Visualization', 'Tools'],
+  },
+  {
+    id: 6,
+    title: 'Game Engine Prototype',
+    description: 'Build immersive 2D games with an intuitive interface and powerful physics engine.',
+    category: 'Gaming',
+    tags: ['Gaming', 'Engine', 'Physics'],
+  },
+  {
+    id: 7,
+    title: 'AI Art Generator',
+    description: 'Create stunning artwork with AI-powered generation tools and customize every detail.',
+    category: 'Design',
+    tags: ['AI', 'Art', 'Creative'],
+  },
 ];
 
-const categories = ['All', 'Design', 'Music', 'Simulation'];
+const categories = ['All', 'Design', 'Music', 'Simulation', 'Development', 'Gaming'];
 
 function App() {
   const [selectedCategory, setSelectedCategory] = useState('All');
@@ -157,6 +178,51 @@ function App() {
                     </div>
                     <h4 className="text-lg font-bold text-slate-900 mb-2">Dice Roller</h4>
                     <p className="text-sm text-slate-600">Roll the dice to decide your fate</p>
+                  </div>
+                  <div className="absolute top-4 right-4">
+                    <span className="inline-block px-3 py-1 bg-slate-900/80 backdrop-blur-sm text-white text-xs font-medium rounded-full">
+                      {prototype.category}
+                    </span>
+                  </div>
+                </div>
+              ) : prototype.id === 5 ? (
+                <div className="relative h-52 bg-gradient-to-br from-cyan-50 to-teal-100 overflow-hidden flex items-center justify-center">
+                  <div className="text-center p-8">
+                    <div className="w-16 h-16 bg-gradient-to-br from-cyan-500 to-teal-600 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg">
+                      <Code className="w-8 h-8 text-white" />
+                    </div>
+                    <h4 className="text-lg font-bold text-slate-900 mb-2">Code Visualizer</h4>
+                    <p className="text-sm text-slate-600">Visualize your code structure</p>
+                  </div>
+                  <div className="absolute top-4 right-4">
+                    <span className="inline-block px-3 py-1 bg-slate-900/80 backdrop-blur-sm text-white text-xs font-medium rounded-full">
+                      {prototype.category}
+                    </span>
+                  </div>
+                </div>
+              ) : prototype.id === 6 ? (
+                <div className="relative h-52 bg-gradient-to-br from-orange-50 to-red-100 overflow-hidden flex items-center justify-center">
+                  <div className="text-center p-8">
+                    <div className="w-16 h-16 bg-gradient-to-br from-orange-500 to-red-600 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg">
+                      <Gamepad2 className="w-8 h-8 text-white" />
+                    </div>
+                    <h4 className="text-lg font-bold text-slate-900 mb-2">Game Engine</h4>
+                    <p className="text-sm text-slate-600">Build your own 2D games</p>
+                  </div>
+                  <div className="absolute top-4 right-4">
+                    <span className="inline-block px-3 py-1 bg-slate-900/80 backdrop-blur-sm text-white text-xs font-medium rounded-full">
+                      {prototype.category}
+                    </span>
+                  </div>
+                </div>
+              ) : prototype.id === 7 ? (
+                <div className="relative h-52 bg-gradient-to-br from-pink-50 to-rose-100 overflow-hidden flex items-center justify-center">
+                  <div className="text-center p-8">
+                    <div className="w-16 h-16 bg-gradient-to-br from-pink-500 to-rose-600 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg">
+                      <Sparkle className="w-8 h-8 text-white" />
+                    </div>
+                    <h4 className="text-lg font-bold text-slate-900 mb-2">AI Art Generator</h4>
+                    <p className="text-sm text-slate-600">Create stunning AI artwork</p>
                   </div>
                   <div className="absolute top-4 right-4">
                     <span className="inline-block px-3 py-1 bg-slate-900/80 backdrop-blur-sm text-white text-xs font-medium rounded-full">
