@@ -46,7 +46,7 @@ const prototypes: Prototype[] = [
     description: 'Transform your code into beautiful visual diagrams and gain insights into your project architecture.',
     category: 'Development',
     demoUrl: 'https://mosaic-postcard-crea-rsbe.bolt.host',
-    githubUrl: '#',
+    githubUrl: 'https://github.com/qgdkdzy6fv-cmd/mosaic-creator-prototype.git',
     tags: ['Development', 'Visualization', 'Tools'],
   },
   {
