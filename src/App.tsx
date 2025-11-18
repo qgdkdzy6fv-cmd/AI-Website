@@ -42,7 +42,7 @@ const prototypes: Prototype[] = [
   },
   {
     id: 5,
-    title: 'Code Visualizer',
+    title: 'Mosaic Creator Prototype',
     description: 'Transform your code into beautiful visual diagrams and gain insights into your project architecture.',
     category: 'Development',
     demoUrl: 'https://mosaic-postcard-crea-rsbe.bolt.host',
