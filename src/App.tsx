@@ -44,7 +44,7 @@ const prototypes: Prototype[] = [
     id: 5,
     title: 'Mosaic Creator Prototype',
     description: 'Transform your code into beautiful visual diagrams and gain insights into your project architecture.',
-    category: 'Development',
+    category: 'Design',
     demoUrl: 'https://top-down-rpg-map-bui-3kbx.bolt.host',
     githubUrl: 'https://github.com/qgdkdzy6fv-cmd/mosaic-creator-prototype.git',
     tags: ['Development', 'Visualization', 'Tools'],
