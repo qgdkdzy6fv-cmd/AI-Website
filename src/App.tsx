@@ -212,7 +212,7 @@ function App() {
                     <div className="w-16 h-16 bg-gradient-to-br from-orange-500 to-red-600 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg">
                       <Gamepad2 className="w-8 h-8 text-white" />
                     </div>
-                    <h4 className="text-lg font-bold text-slate-900 mb-2">Game Engine</h4>
+                    <h4 className="text-lg font-bold text-slate-900 mb-2">RPG Map Builder</h4>
                     <p className="text-sm text-slate-600">Build your own 2D games</p>
                   </div>
                   <div className="absolute top-4 right-4">
