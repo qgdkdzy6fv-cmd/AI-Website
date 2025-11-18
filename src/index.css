@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@keyframes pulse-green {
+@keyframes pulse-icon {
   0%, 100% {
     opacity: 1;
   }
@@ -11,32 +11,6 @@
   }
 }
 
-.animate-pulse-green {
-  animation: pulse-green 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-}
-
-@keyframes pulse-blue {
-  0%, 100% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0.5;
-  }
-}
-
-.animate-pulse-blue {
-  animation: pulse-blue 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-}
-
-@keyframes pulse-purple {
-  0%, 100% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0.5;
-  }
-}
-
-.animate-pulse-purple {
-  animation: pulse-purple 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+.animate-pulse-icon {
+  animation: pulse-icon 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }

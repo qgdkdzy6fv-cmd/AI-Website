@@ -281,7 +281,7 @@ function App() {
                       rel="noopener noreferrer"
                       className="flex-1 flex items-center justify-center space-x-2 px-4 py-2.5 bg-slate-900 text-white rounded-lg hover:bg-slate-800 transition-all duration-200 hover:scale-105"
                     >
-                      <Zap className={`w-4 h-4 ${prototype.id === 1 ? 'text-green-400 animate-pulse-green' : prototype.id === 2 ? 'text-blue-400 animate-pulse-blue' : prototype.id === 4 ? 'animate-pulse-purple' : prototype.id === 5 ? 'text-cyan-400' : prototype.id === 6 ? 'text-orange-400' : prototype.id === 7 ? 'text-pink-400' : ''}`} style={prototype.id === 4 ? { color: '#8b5cf6' } : undefined} />
+                      <Zap className={`w-4 h-4 animate-pulse-icon ${prototype.id === 1 ? 'text-green-400' : prototype.id === 2 ? 'text-blue-400' : prototype.id === 4 ? '' : prototype.id === 5 ? 'text-cyan-400' : prototype.id === 6 ? 'text-orange-400' : prototype.id === 7 ? 'text-pink-400' : ''}`} style={prototype.id === 4 ? { color: '#8b5cf6' } : undefined} />
                       <span className="text-sm font-medium">Live Demo</span>
                     </a>
                   )}
