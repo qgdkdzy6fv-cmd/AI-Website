@@ -197,7 +197,7 @@ function App() {
                     <div className="w-16 h-16 bg-gradient-to-br from-cyan-500 to-teal-600 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg">
                       <Code className="w-8 h-8 text-white" />
                     </div>
-                    <h4 className="text-lg font-bold text-slate-900 mb-2">RPG Map Builder</h4>
+                    <h4 className="text-lg font-bold text-slate-900 mb-2">Mosaic Postcard Creator</h4>
                     <p className="text-sm text-slate-600">Create mosaics for friends and family</p>
                   </div>
                   <div className="absolute top-4 right-4">
