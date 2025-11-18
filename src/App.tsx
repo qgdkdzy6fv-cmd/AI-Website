@@ -53,7 +53,7 @@ const prototypes: Prototype[] = [
     id: 6,
     title: 'Game Engine Prototype',
     description: 'Build immersive 2D games with an intuitive interface and powerful physics engine.',
-    category: 'Gaming',
+    category: 'Simulation',
     demoUrl: '#',
     githubUrl: '#',
     tags: ['Gaming', 'Engine', 'Physics'],
