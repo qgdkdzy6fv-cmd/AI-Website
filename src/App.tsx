@@ -52,7 +52,7 @@ const prototypes: Prototype[] = [
   {
     id: 6,
     title: 'Game Engine Prototype',
-    description: 'Build immersive 2D games with an intuitive interface and powerful physics engine.',
+    description: 'Visualize your RPG sessions',
     category: 'Simulation',
     demoUrl: 'https://top-down-rpg-map-bui-3kbx.bolt.host',
     githubUrl: 'https://github.com/qgdkdzy6fv-cmd/Tabletop-Map-Builder-Prototype.git',
