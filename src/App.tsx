@@ -1,4 +1,4 @@
-import { Sparkles, Github, ExternalLink, Cpu, Brain, Zap, Music, Palette, Dices, LayoutGrid, Gamepad2, Sparkle } from 'lucide-react';
+import { Sparkles, Github, ExternalLink, Cpu, Brain, Zap, Music, Palette, Dices, LayoutGrid, Gamepad2, Sparkle, Map } from 'lucide-react';
 import { useState } from 'react';
 
 interface Prototype {
@@ -210,7 +210,7 @@ function App() {
                 <div className="relative h-52 bg-gradient-to-br from-orange-50 to-red-100 overflow-hidden flex items-center justify-center">
                   <div className="text-center p-8">
                     <div className="w-16 h-16 bg-gradient-to-br from-orange-500 to-red-600 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg">
-                      <Gamepad2 className="w-8 h-8 text-white" />
+                      <Map className="w-8 h-8 text-white" />
                     </div>
                     <h4 className="text-lg font-bold text-slate-900 mb-2">RPG Map Builder</h4>
                     <p className="text-sm text-slate-600">Visualize your RPG sessions</p>
