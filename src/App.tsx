@@ -69,7 +69,7 @@ const prototypes: Prototype[] = [
   },
 ];
 
-const categories = ['All', 'Art', 'Design', 'Gaming', 'Music', 'Simulation'];
+const categories = ['All', 'Art', 'Design', 'Music', 'Simulation'];
 
 function App() {
   const [selectedCategory, setSelectedCategory] = useState('All');
