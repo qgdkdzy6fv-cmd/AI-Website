@@ -61,7 +61,7 @@ const prototypes: Prototype[] = [
   },
   {
     id: 7,
-    title: 'AI Art Generator',
+    title: 'Beat Box Visualizer Prototype',
     description: 'Create stunning artwork with AI-powered generation tools and customize every detail.',
     category: 'Music',
     demoUrl: 'https://beat-box-visualize-p-5swm.bolt.host',
