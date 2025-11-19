@@ -1,4 +1,4 @@
-import { Sparkles, Github, ExternalLink, Cpu, Brain, Zap, Music, Palette, Dices, LayoutGrid, Gamepad2, Sparkle, Map } from 'lucide-react';
+import { Sparkles, Github, ExternalLink, Cpu, Brain, Zap, Music, Palette, Dices, LayoutGrid, Gamepad2, Drum, Map } from 'lucide-react';
 import { useState } from 'react';
 
 interface Prototype {
@@ -225,7 +225,7 @@ function App() {
                 <div className="relative h-52 bg-gradient-to-br from-pink-50 to-rose-100 overflow-hidden flex items-center justify-center">
                   <div className="text-center p-8">
                     <div className="w-16 h-16 bg-gradient-to-br from-pink-500 to-rose-600 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg">
-                      <Sparkle className="w-8 h-8 text-white" />
+                      <Drum className="w-8 h-8 text-white" />
                     </div>
                     <h4 className="text-lg font-bold text-slate-900 mb-2">AI Art Generator</h4>
                     <p className="text-sm text-slate-600">Create stunning AI artwork</p>
