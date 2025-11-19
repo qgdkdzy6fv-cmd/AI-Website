@@ -65,7 +65,7 @@ const prototypes: Prototype[] = [
     description: 'Create stunning artwork with AI-powered generation tools and customize every detail.',
     category: 'Music',
     demoUrl: '#',
-    githubUrl: '#',
+    githubUrl: 'https://github.com/qgdkdzy6fv-cmd/rhythm-creator-visualizer.git',
     tags: ['Rhythm', 'Music', 'Interactive'],
   },
 ];
