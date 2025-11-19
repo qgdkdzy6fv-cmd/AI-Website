@@ -64,7 +64,7 @@ const prototypes: Prototype[] = [
     title: 'AI Art Generator',
     description: 'Create stunning artwork with AI-powered generation tools and customize every detail.',
     category: 'Music',
-    demoUrl: '#',
+    demoUrl: 'https://beat-box-visualize-p-5swm.bolt.host',
     githubUrl: 'https://github.com/qgdkdzy6fv-cmd/rhythm-creator-visualizer.git',
     tags: ['Rhythm', 'Music', 'Interactive'],
   },
