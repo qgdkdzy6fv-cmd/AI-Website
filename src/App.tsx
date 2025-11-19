@@ -47,7 +47,7 @@ const prototypes: Prototype[] = [
     category: 'Art',
     demoUrl: 'https://mosaic-postcard-crea-rsbe.bolt.host',
     githubUrl: 'https://github.com/qgdkdzy6fv-cmd/mosaic-creator-prototype.git',
-    tags: ['Development', 'Visualization', 'Tools'],
+    tags: ['Mosaic', 'Creative', 'Art'],
   },
   {
     id: 6,
