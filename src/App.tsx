@@ -65,7 +65,7 @@ const prototypes: Prototype[] = [
     category: 'Design',
     demoUrl: '#',
     githubUrl: '#',
-    tags: ['AI', 'Art', 'Creative'],
+    tags: ['Rhythm', 'Music', 'Interactive'],
   },
 ];
 
