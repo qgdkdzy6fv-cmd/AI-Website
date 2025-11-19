@@ -43,7 +43,7 @@ const prototypes: Prototype[] = [
   {
     id: 5,
     title: 'Mosaic Creator Prototype',
-    description: 'Visualize your RPG sessions',
+    description: 'Design stunning mosaics in minutes—unlock your creativity and transform any idea into a vibrant pattern effortlessly.',
     category: 'Art',
     demoUrl: 'https://mosaic-postcard-crea-rsbe.bolt.host',
     githubUrl: 'https://github.com/qgdkdzy6fv-cmd/mosaic-creator-prototype.git',
