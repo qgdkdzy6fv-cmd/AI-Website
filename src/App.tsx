@@ -54,7 +54,7 @@ const prototypes: Prototype[] = [
     title: 'Game Engine Prototype',
     description: 'Build immersive 2D games with an intuitive interface and powerful physics engine.',
     category: 'Simulation',
-    demoUrl: '#',
+    demoUrl: 'https://top-down-rpg-map-bui-3kbx.bolt.host',
     githubUrl: '#',
     tags: ['Gaming', 'Engine', 'Physics'],
   },
