@@ -55,7 +55,7 @@ const prototypes: Prototype[] = [
     description: 'Build immersive 2D games with an intuitive interface and powerful physics engine.',
     category: 'Simulation',
     demoUrl: 'https://top-down-rpg-map-bui-3kbx.bolt.host',
-    githubUrl: '#',
+    githubUrl: 'https://github.com/qgdkdzy6fv-cmd/Tabletop-Map-Builder-Prototype.git',
     tags: ['Gaming', 'Engine', 'Physics'],
   },
   {
