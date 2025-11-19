@@ -51,7 +51,7 @@ const prototypes: Prototype[] = [
   },
   {
     id: 6,
-    title: 'Game Engine Prototype',
+    title: 'Tabletop Map Builder',
     description: 'Visualize your RPG sessions',
     category: 'Simulation',
     demoUrl: 'https://top-down-rpg-map-bui-3kbx.bolt.host',
