@@ -1,5 +1,6 @@
 import { Sparkles, Github, ExternalLink, Cpu, Brain, Zap, Music, Palette, Dices, LayoutGrid, Gamepad2, Drum, Map } from 'lucide-react';
 import { useState } from 'react';
+import { ThemeToggle } from './components/ThemeToggle';
 
 interface Prototype {
   id: number;
@@ -79,9 +80,9 @@ function App() {
     : prototypes.filter(p => p.category === selectedCategory);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-slate-100">
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-slate-100 dark:from-slate-900 dark:via-slate-800 dark:to-slate-900">
       {/* Header */}
-      <header className="border-b border-slate-200 bg-white/80 backdrop-blur-sm sticky top-0 z-50">
+      <header className="border-b border-slate-200 dark:border-slate-700 bg-white/80 dark:bg-slate-900/80 backdrop-blur-sm sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-3">
@@ -89,19 +90,22 @@ function App() {
                 <Brain className="w-6 h-6 text-white" />
               </div>
               <div>
-                <h1 className="text-2xl font-bold text-slate-900">Alec Tello Designs</h1>
-                <p className="text-sm text-slate-600">AI Prototypes & Experiments</p>
+                <h1 className="text-2xl font-bold text-slate-900 dark:text-slate-100">Alec Tello Designs</h1>
+                <p className="text-sm text-slate-600 dark:text-slate-400">AI Prototypes & Experiments</p>
               </div>
             </div>
-            <a
-              href="https://github.com/qgdkdzy6fv-cmd/AI-Website"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center space-x-2 px-4 py-2 bg-slate-900 text-white rounded-lg hover:bg-slate-800 transition-all duration-200 hover:scale-105"
-            >
-              <Github className="w-4 h-4" />
-              <span className="text-sm font-medium">Website GitHub</span>
-            </a>
+            <div className="flex items-center gap-4">
+              <ThemeToggle />
+              <a
+                href="https://github.com/qgdkdzy6fv-cmd/AI-Website"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center space-x-2 px-4 py-2 bg-slate-900 dark:bg-slate-100 text-white dark:text-slate-900 rounded-lg hover:bg-slate-800 dark:hover:bg-slate-200 transition-all duration-200 hover:scale-105"
+              >
+                <Github className="w-4 h-4" />
+                <span className="text-sm font-medium">Website GitHub</span>
+              </a>
+            </div>
           </div>
         </div>
       </header>
@@ -109,14 +113,14 @@ function App() {
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         {/* Hero Section */}
         <div className="text-center mb-16">
-          <div className="inline-flex items-center space-x-2 px-4 py-2 bg-blue-100 text-blue-700 rounded-full mb-6">
+          <div className="inline-flex items-center space-x-2 px-4 py-2 bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 rounded-full mb-6">
             <Sparkles className="w-4 h-4" />
             <span className="text-sm font-medium">Crafted with AI</span>
           </div>
-          <h2 className="text-5xl font-bold text-slate-900 mb-4">
+          <h2 className="text-5xl font-bold text-slate-900 dark:text-slate-100 mb-4">
             Exploring the Future of AI
           </h2>
-          <p className="text-xl text-slate-600 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-xl text-slate-600 dark:text-slate-400 max-w-2xl mx-auto leading-relaxed">
             A collection of experimental prototypes that push the boundaries of coding and design using artificial intelligence.
           </p>
         </div>
@@ -129,8 +133,8 @@ function App() {
               onClick={() => setSelectedCategory(category)}
               className={`px-5 py-2.5 rounded-lg font-medium transition-all duration-200 ${
                 selectedCategory === category
-                  ? 'bg-slate-900 text-white shadow-lg scale-105'
-                  : 'bg-white text-slate-700 hover:bg-slate-100 border border-slate-200'
+                  ? 'bg-slate-900 dark:bg-slate-100 text-white dark:text-slate-900 shadow-lg scale-105'
+                  : 'bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 border border-slate-200 dark:border-slate-600'
               }`}
             >
               {category}
@@ -143,7 +147,7 @@ function App() {
           {filteredPrototypes.map((prototype) => (
             <div
               key={prototype.id}
-              className="group bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
+              className="group bg-white dark:bg-slate-800 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-700 overflow-hidden hover:shadow-xl dark:hover:shadow-slate-900/50 transition-all duration-300 hover:-translate-y-1"
             >
               {/* Card Header with Icon/Preview */}
               {prototype.id === 1 ? (
@@ -152,8 +156,8 @@ function App() {
                     <div className="w-16 h-16 bg-gradient-to-br from-emerald-500 to-green-600 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg">
                       <Music className="w-8 h-8 text-white" />
                     </div>
-                    <h4 className="text-lg font-bold text-slate-900 mb-2">Tempo Garden</h4>
-                    <p className="text-sm text-slate-600">Play in tempo to grow your plant</p>
+                    <h4 className="text-lg font-bold text-slate-900 dark:text-slate-100 mb-2">Tempo Garden</h4>
+                    <p className="text-sm text-slate-600 dark:text-slate-400">Play in tempo to grow your plant</p>
                   </div>
                   <div className="absolute top-4 right-4">
                     <span className="inline-block px-3 py-1 bg-slate-900/80 backdrop-blur-sm text-white text-xs font-medium rounded-full">
@@ -167,8 +171,8 @@ function App() {
                     <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-slate-700 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg">
                       <Palette className="w-8 h-8 text-white" />
                     </div>
-                    <h4 className="text-lg font-bold text-slate-900 mb-2">Logo Creator</h4>
-                    <p className="text-sm text-slate-600">Design your perfect logo</p>
+                    <h4 className="text-lg font-bold text-slate-900 dark:text-slate-100 mb-2">Logo Creator</h4>
+                    <p className="text-sm text-slate-600 dark:text-slate-400">Design your perfect logo</p>
                   </div>
                   <div className="absolute top-4 right-4">
                     <span className="inline-block px-3 py-1 bg-slate-900/80 backdrop-blur-sm text-white text-xs font-medium rounded-full">
@@ -182,8 +186,8 @@ function App() {
                     <div className="w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg" style={{ backgroundColor: '#8b5cf6' }}>
                       <Dices className="w-8 h-8 text-white" />
                     </div>
-                    <h4 className="text-lg font-bold text-slate-900 mb-2">Dice Roller</h4>
-                    <p className="text-sm text-slate-600">Roll the dice to decide your fate</p>
+                    <h4 className="text-lg font-bold text-slate-900 dark:text-slate-100 mb-2">Dice Roller</h4>
+                    <p className="text-sm text-slate-600 dark:text-slate-400">Roll the dice to decide your fate</p>
                   </div>
                   <div className="absolute top-4 right-4">
                     <span className="inline-block px-3 py-1 bg-slate-900/80 backdrop-blur-sm text-white text-xs font-medium rounded-full">
@@ -197,8 +201,8 @@ function App() {
                     <div className="w-16 h-16 bg-gradient-to-br from-cyan-500 to-teal-600 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg">
                       <LayoutGrid className="w-8 h-8 text-white" />
                     </div>
-                    <h4 className="text-lg font-bold text-slate-900 mb-2">Mosaic Postcard Creator</h4>
-                    <p className="text-sm text-slate-600">Create mosaics for friends and family</p>
+                    <h4 className="text-lg font-bold text-slate-900 dark:text-slate-100 mb-2">Mosaic Postcard Creator</h4>
+                    <p className="text-sm text-slate-600 dark:text-slate-400">Create mosaics for friends and family</p>
                   </div>
                   <div className="absolute top-4 right-4">
                     <span className="inline-block px-3 py-1 bg-slate-900/80 backdrop-blur-sm text-white text-xs font-medium rounded-full">
@@ -212,8 +216,8 @@ function App() {
                     <div className="w-16 h-16 bg-gradient-to-br from-orange-500 to-red-600 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg">
                       <Map className="w-8 h-8 text-white" />
                     </div>
-                    <h4 className="text-lg font-bold text-slate-900 mb-2">RPG Map Builder</h4>
-                    <p className="text-sm text-slate-600">Visualize your RPG sessions</p>
+                    <h4 className="text-lg font-bold text-slate-900 dark:text-slate-100 mb-2">RPG Map Builder</h4>
+                    <p className="text-sm text-slate-600 dark:text-slate-400">Visualize your RPG sessions</p>
                   </div>
                   <div className="absolute top-4 right-4">
                     <span className="inline-block px-3 py-1 bg-slate-900/80 backdrop-blur-sm text-white text-xs font-medium rounded-full">
@@ -227,8 +231,8 @@ function App() {
                     <div className="w-16 h-16 bg-gradient-to-br from-pink-500 to-rose-600 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg">
                       <Drum className="w-8 h-8 text-white" />
                     </div>
-                    <h4 className="text-lg font-bold text-slate-900 mb-2">Rhythm Creator + Visualizer</h4>
-                    <p className="text-sm text-slate-600">Create stunning AI artwork</p>
+                    <h4 className="text-lg font-bold text-slate-900 dark:text-slate-100 mb-2">Rhythm Creator + Visualizer</h4>
+                    <p className="text-sm text-slate-600 dark:text-slate-400">Create stunning AI artwork</p>
                   </div>
                   <div className="absolute top-4 right-4">
                     <span className="inline-block px-3 py-1 bg-slate-900/80 backdrop-blur-sm text-white text-xs font-medium rounded-full">
@@ -253,10 +257,10 @@ function App() {
 
               {/* Card Content */}
               <div className="p-6">
-                <h3 className="text-xl font-bold text-slate-900 mb-3 group-hover:text-blue-600 transition-colors">
+                <h3 className="text-xl font-bold text-slate-900 dark:text-slate-100 mb-3 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
                   {prototype.title}
                 </h3>
-                <p className="text-slate-600 mb-4 leading-relaxed">
+                <p className="text-slate-600 dark:text-slate-400 mb-4 leading-relaxed">
                   {prototype.description}
                 </p>
 
@@ -265,7 +269,7 @@ function App() {
                   {prototype.tags.map((tag) => (
                     <span
                       key={tag}
-                      className="px-3 py-1 bg-slate-100 text-slate-700 text-xs font-medium rounded-lg"
+                      className="px-3 py-1 bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300 text-xs font-medium rounded-lg"
                     >
                       {tag}
                     </span>
@@ -279,7 +283,7 @@ function App() {
                       href={prototype.demoUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex-1 flex items-center justify-center space-x-2 px-4 py-2.5 bg-slate-900 text-white rounded-lg hover:bg-slate-800 transition-all duration-200 hover:scale-105"
+                      className="flex-1 flex items-center justify-center space-x-2 px-4 py-2.5 bg-slate-900 dark:bg-slate-100 text-white dark:text-slate-900 rounded-lg hover:bg-slate-800 dark:hover:bg-slate-200 transition-all duration-200 hover:scale-105"
                     >
                       <Zap className={`w-4 h-4 animate-pulse-icon ${prototype.id === 1 ? 'text-green-400' : prototype.id === 2 ? 'text-blue-400' : prototype.id === 4 ? '' : prototype.id === 5 ? 'text-cyan-400' : prototype.id === 6 ? 'text-orange-400' : prototype.id === 7 ? 'text-pink-400' : ''}`} style={prototype.id === 4 ? { color: '#8b5cf6' } : undefined} />
                       <span className="text-sm font-medium">Live Demo</span>
@@ -290,7 +294,7 @@ function App() {
                       href={prototype.githubUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center justify-center px-4 py-2.5 bg-slate-100 text-slate-700 rounded-lg hover:bg-slate-200 transition-all duration-200"
+                      className="flex items-center justify-center px-4 py-2.5 bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300 rounded-lg hover:bg-slate-200 dark:hover:bg-slate-600 transition-all duration-200"
                     >
                       <Github className="w-4 h-4" />
                     </a>
@@ -304,19 +308,19 @@ function App() {
         {/* Empty State */}
         {filteredPrototypes.length === 0 && (
           <div className="text-center py-16">
-            <div className="w-16 h-16 bg-slate-100 rounded-full flex items-center justify-center mx-auto mb-4">
-              <Brain className="w-8 h-8 text-slate-400" />
+            <div className="w-16 h-16 bg-slate-100 dark:bg-slate-800 rounded-full flex items-center justify-center mx-auto mb-4">
+              <Brain className="w-8 h-8 text-slate-400 dark:text-slate-500" />
             </div>
-            <h3 className="text-xl font-semibold text-slate-900 mb-2">No prototypes found</h3>
-            <p className="text-slate-600">Try selecting a different category</p>
+            <h3 className="text-xl font-semibold text-slate-900 dark:text-slate-100 mb-2">No prototypes found</h3>
+            <p className="text-slate-600 dark:text-slate-400">Try selecting a different category</p>
           </div>
         )}
       </main>
 
       {/* Footer */}
-      <footer className="border-t border-slate-200 bg-white/80 backdrop-blur-sm mt-20">
+      <footer className="border-t border-slate-200 dark:border-slate-700 bg-white/80 dark:bg-slate-900/80 backdrop-blur-sm mt-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-          <p className="text-center text-slate-600">
+          <p className="text-center text-slate-600 dark:text-slate-400">
             Built with curiosity and a passion for AI innovation
           </p>
         </div>

@@ -2,6 +2,40 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  :root {
+    --bg-primary: 248 250 252;
+    --bg-secondary: 255 255 255;
+    --bg-gradient-start: 248 250 252;
+    --bg-gradient-mid: 239 246 255;
+    --bg-gradient-end: 248 250 252;
+    --text-primary: 15 23 42;
+    --text-secondary: 71 85 105;
+    --border-color: 226 232 240;
+    --card-bg: 255 255 255;
+    --card-border: 226 232 240;
+  }
+
+  .dark {
+    --bg-primary: 15 23 42;
+    --bg-secondary: 30 41 59;
+    --bg-gradient-start: 15 23 42;
+    --bg-gradient-mid: 30 41 59;
+    --bg-gradient-end: 15 23 42;
+    --text-primary: 248 250 252;
+    --text-secondary: 203 213 225;
+    --border-color: 51 65 85;
+    --card-bg: 30 41 59;
+    --card-border: 51 65 85;
+  }
+
+  * {
+    transition-property: background-color, border-color, color, fill, stroke;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 200ms;
+  }
+}
+
 @keyframes pulse-icon {
   0%, 100% {
     opacity: 1;
