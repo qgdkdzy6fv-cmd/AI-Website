@@ -44,7 +44,7 @@ const prototypes: Prototype[] = [
     id: 5,
     title: 'Mosaic Creator Prototype',
     description: 'Visualize your RPG sessions',
-    category: 'Design',
+    category: 'Art',
     demoUrl: 'https://mosaic-postcard-crea-rsbe.bolt.host',
     githubUrl: 'https://github.com/qgdkdzy6fv-cmd/mosaic-creator-prototype.git',
     tags: ['Development', 'Visualization', 'Tools'],
@@ -69,7 +69,7 @@ const prototypes: Prototype[] = [
   },
 ];
 
-const categories = ['All', 'Design', 'Music', 'Simulation', 'Gaming'];
+const categories = ['All', 'Design', 'Music', 'Simulation', 'Gaming', 'Art'];
 
 function App() {
   const [selectedCategory, setSelectedCategory] = useState('All');
