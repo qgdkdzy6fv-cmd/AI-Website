@@ -56,7 +56,7 @@ const prototypes: Prototype[] = [
     category: 'Simulation',
     demoUrl: 'https://top-down-rpg-map-bui-3kbx.bolt.host',
     githubUrl: 'https://github.com/qgdkdzy6fv-cmd/Tabletop-Map-Builder-Prototype.git',
-    tags: ['Gaming', 'Engine', 'Physics'],
+    tags: ['Gaming', 'Interactive', 'Physics'],
   },
   {
     id: 7,
