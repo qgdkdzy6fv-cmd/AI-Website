@@ -62,7 +62,7 @@ const prototypes: Prototype[] = [
     id: 7,
     title: 'AI Art Generator',
     description: 'Create stunning artwork with AI-powered generation tools and customize every detail.',
-    category: 'Design',
+    category: 'Music',
     demoUrl: '#',
     githubUrl: '#',
     tags: ['Rhythm', 'Music', 'Interactive'],
