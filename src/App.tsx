@@ -151,9 +151,9 @@ function App() {
             >
               {/* Card Header with Icon/Preview */}
               {prototype.id === 1 ? (
-                <div className="relative h-52 bg-gradient-to-br from-emerald-50 to-blue-50 overflow-hidden flex items-center justify-center">
+                <div className="relative h-52 bg-gradient-to-br from-emerald-50 to-blue-50 dark:from-emerald-900 dark:to-blue-900 overflow-hidden flex items-center justify-center">
                   <div className="text-center p-8">
-                    <div className="w-16 h-16 bg-gradient-to-br from-emerald-500 to-green-600 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg">
+                    <div className="w-16 h-16 bg-gradient-to-br from-emerald-500 to-green-600 dark:from-emerald-600 dark:to-green-700 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg">
                       <Music className="w-8 h-8 text-white" />
                     </div>
                     <h4 className="text-lg font-bold text-slate-900 dark:text-slate-100 mb-2">Tempo Garden</h4>
@@ -166,9 +166,9 @@ function App() {
                   </div>
                 </div>
               ) : prototype.id === 2 ? (
-                <div className="relative h-52 bg-gradient-to-br from-blue-100 to-blue-200 overflow-hidden flex items-center justify-center">
+                <div className="relative h-52 bg-gradient-to-br from-blue-100 to-blue-200 dark:from-blue-900 dark:to-blue-800 overflow-hidden flex items-center justify-center">
                   <div className="text-center p-8">
-                    <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-slate-700 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg">
+                    <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-slate-700 dark:from-blue-600 dark:to-slate-600 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg">
                       <Palette className="w-8 h-8 text-white" />
                     </div>
                     <h4 className="text-lg font-bold text-slate-900 dark:text-slate-100 mb-2">Logo Creator</h4>
@@ -181,7 +181,7 @@ function App() {
                   </div>
                 </div>
               ) : prototype.id === 4 ? (
-                <div className="relative h-52 bg-gradient-to-br from-violet-100 to-purple-100 overflow-hidden flex items-center justify-center">
+                <div className="relative h-52 bg-gradient-to-br from-violet-100 to-purple-100 dark:from-violet-900 dark:to-purple-900 overflow-hidden flex items-center justify-center">
                   <div className="text-center p-8">
                     <div className="w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg" style={{ backgroundColor: '#8b5cf6' }}>
                       <Dices className="w-8 h-8 text-white" />
@@ -196,9 +196,9 @@ function App() {
                   </div>
                 </div>
               ) : prototype.id === 5 ? (
-                <div className="relative h-52 bg-gradient-to-br from-cyan-50 to-teal-100 overflow-hidden flex items-center justify-center">
+                <div className="relative h-52 bg-gradient-to-br from-cyan-50 to-teal-100 dark:from-cyan-900 dark:to-teal-900 overflow-hidden flex items-center justify-center">
                   <div className="text-center p-8">
-                    <div className="w-16 h-16 bg-gradient-to-br from-cyan-500 to-teal-600 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg">
+                    <div className="w-16 h-16 bg-gradient-to-br from-cyan-500 to-teal-600 dark:from-cyan-600 dark:to-teal-700 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg">
                       <LayoutGrid className="w-8 h-8 text-white" />
                     </div>
                     <h4 className="text-lg font-bold text-slate-900 dark:text-slate-100 mb-2">Mosaic Postcard Creator</h4>
@@ -211,9 +211,9 @@ function App() {
                   </div>
                 </div>
               ) : prototype.id === 6 ? (
-                <div className="relative h-52 bg-gradient-to-br from-orange-50 to-red-100 overflow-hidden flex items-center justify-center">
+                <div className="relative h-52 bg-gradient-to-br from-orange-50 to-red-100 dark:from-orange-900 dark:to-red-900 overflow-hidden flex items-center justify-center">
                   <div className="text-center p-8">
-                    <div className="w-16 h-16 bg-gradient-to-br from-orange-500 to-red-600 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg">
+                    <div className="w-16 h-16 bg-gradient-to-br from-orange-500 to-red-600 dark:from-orange-600 dark:to-red-700 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg">
                       <Map className="w-8 h-8 text-white" />
                     </div>
                     <h4 className="text-lg font-bold text-slate-900 dark:text-slate-100 mb-2">RPG Map Builder</h4>
@@ -226,9 +226,9 @@ function App() {
                   </div>
                 </div>
               ) : prototype.id === 7 ? (
-                <div className="relative h-52 bg-gradient-to-br from-pink-50 to-rose-100 overflow-hidden flex items-center justify-center">
+                <div className="relative h-52 bg-gradient-to-br from-pink-50 to-rose-100 dark:from-pink-900 dark:to-rose-900 overflow-hidden flex items-center justify-center">
                   <div className="text-center p-8">
-                    <div className="w-16 h-16 bg-gradient-to-br from-pink-500 to-rose-600 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg">
+                    <div className="w-16 h-16 bg-gradient-to-br from-pink-500 to-rose-600 dark:from-pink-600 dark:to-rose-700 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg">
                       <Drum className="w-8 h-8 text-white" />
                     </div>
                     <h4 className="text-lg font-bold text-slate-900 dark:text-slate-100 mb-2">Rhythm Creator + Visualizer</h4>
