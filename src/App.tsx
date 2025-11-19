@@ -213,7 +213,7 @@ function App() {
                       <Gamepad2 className="w-8 h-8 text-white" />
                     </div>
                     <h4 className="text-lg font-bold text-slate-900 mb-2">RPG Map Builder</h4>
-                    <p className="text-sm text-slate-600">Build your own 2D games</p>
+                    <p className="text-sm text-slate-600">Visualize your RPG sessions</p>
                   </div>
                   <div className="absolute top-4 right-4">
                     <span className="inline-block px-3 py-1 bg-slate-900/80 backdrop-blur-sm text-white text-xs font-medium rounded-full">
