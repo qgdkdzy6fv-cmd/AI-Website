@@ -52,7 +52,7 @@ const prototypes: Prototype[] = [
   {
     id: 6,
     title: 'Tabletop Map Builder Prototype',
-    description: 'Quickly capture your adventure and see the story unfold.',
+    description: 'Quickly capture your adventure notes and clearly visualize the story as it unfolds.',
     category: 'Simulation',
     demoUrl: 'https://top-down-rpg-map-bui-3kbx.bolt.host',
     githubUrl: 'https://github.com/qgdkdzy6fv-cmd/Tabletop-Map-Builder-Prototype.git',
