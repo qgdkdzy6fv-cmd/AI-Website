@@ -170,7 +170,7 @@ function App() {
                   </div>
                   <div className="absolute top-4 right-4">
                     <span className="inline-block px-3 py-1 bg-slate-900/80 backdrop-blur-sm text-white text-xs font-medium rounded-full">
-                      {prototype.category}
+                      Game
                     </span>
                   </div>
                 </div>
