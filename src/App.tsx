@@ -56,7 +56,7 @@ const prototypes: Prototype[] = [
     description: 'An exciting new prototype to explore.',
     category: 'Art',
     demoUrl: 'https://sound-to-visual-draw-901l.bolt.host',
-    githubUrl: 'https://github.com/example',
+    githubUrl: 'https://github.com/qgdkdzy6fv-cmd/sound-canvas-prototype.git',
     tags: ['New', 'Experimental'],
   },
   {
