@@ -95,7 +95,7 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-3">
-              <div className="p-2 bg-gradient-to-br from-amber-400 via-yellow-500 to-amber-600 rounded-xl shadow-lg">
+              <div className="p-2 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-xl">
                 <Brain className="w-6 h-6 text-white" />
               </div>
               <div>
@@ -122,7 +122,7 @@ function App() {
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         {/* Hero Section */}
         <div className="text-center mb-16">
-          <div className="inline-flex items-center space-x-2 px-4 py-2 bg-amber-100 dark:bg-amber-900/50 text-amber-700 dark:text-amber-300 rounded-full mb-6 border border-amber-200 dark:border-amber-700">
+          <div className="inline-flex items-center space-x-2 px-4 py-2 bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 rounded-full mb-6">
             <Sparkles className="w-4 h-4" />
             <span className="text-sm font-medium">Crafted with AI</span>
           </div>
@@ -142,8 +142,8 @@ function App() {
               onClick={() => setSelectedCategory(category)}
               className={`px-5 py-2.5 rounded-lg font-medium transition-all duration-200 ${
                 selectedCategory === category
-                  ? 'bg-gradient-to-r from-amber-500 to-yellow-500 dark:from-amber-600 dark:to-yellow-600 text-white shadow-lg shadow-amber-500/50 scale-105 border border-amber-400'
-                  : 'bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-amber-50 dark:hover:bg-slate-700 hover:border-amber-200 border border-slate-200 dark:border-slate-600'
+                  ? 'bg-slate-900 dark:bg-slate-100 text-white dark:text-slate-900 shadow-lg scale-105'
+                  : 'bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 border border-slate-200 dark:border-slate-600'
               }`}
             >
               {category}
@@ -156,7 +156,7 @@ function App() {
           {filteredPrototypes.map((prototype) => (
             <div
               key={prototype.id}
-              className="group bg-white dark:bg-slate-800 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-700 overflow-hidden hover:shadow-xl hover:shadow-amber-500/20 dark:hover:shadow-amber-500/10 hover:border-amber-300 dark:hover:border-amber-600 transition-all duration-300 hover:-translate-y-1"
+              className="group bg-white dark:bg-slate-800 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-700 overflow-hidden hover:shadow-xl dark:hover:shadow-slate-900/50 transition-all duration-300 hover:-translate-y-1"
             >
               {/* Card Header with Icon/Preview */}
               {prototype.id === 1 ? (
@@ -309,7 +309,7 @@ function App() {
                       rel="noopener noreferrer"
                       className="flex-1 flex items-center justify-center space-x-2 px-4 py-2.5 bg-slate-900 dark:bg-slate-700 text-white dark:text-slate-300 rounded-lg hover:bg-slate-800 dark:hover:bg-slate-600 transition-all duration-200 hover:scale-105"
                     >
-                      <Zap className="w-4 h-4 animate-pulse-icon text-amber-400" />
+                      <Zap className={`w-4 h-4 animate-pulse-icon ${prototype.id === 1 ? 'text-green-400' : prototype.id === 2 ? 'text-blue-400' : prototype.id === 4 ? '' : prototype.id === 5 ? 'text-cyan-400' : prototype.id === 6 ? 'text-orange-400' : prototype.id === 7 ? 'text-pink-400' : prototype.id === 8 ? 'text-amber-400' : ''}`} style={prototype.id === 4 ? { color: '#8b5cf6' } : undefined} />
                       <span className="text-sm font-medium">Live Demo</span>
                     </a>
                   )}
