@@ -18,7 +18,7 @@ const prototypes: Prototype[] = [
     id: 1,
     title: 'Metronome Game Prototype',
     description: 'Find your flow, follow the metronome, and let your garden blossom with every perfect beat.',
-    category: 'Music',
+    category: 'Game',
     demoUrl: 'https://metronomegame-prototype.bolt.host',
     githubUrl: 'https://github.com/qgdkdzy6fv-cmd/AI-metronome',
     tags: ['Rhythm Game', 'Music', 'Interactive'],
@@ -72,14 +72,14 @@ const prototypes: Prototype[] = [
     id: 7,
     title: 'Beat Box Visualizer Prototype',
     description: 'Create stunning artwork with AI-powered generation tools and customize every detail.',
-    category: 'Music',
+    category: 'Game',
     demoUrl: 'https://beat-box-visualize-p-5swm.bolt.host',
     githubUrl: 'https://github.com/qgdkdzy6fv-cmd/rhythm-creator-visualizer.git',
     tags: ['Rhythm', 'Music', 'Interactive'],
   },
 ];
 
-const categories = ['All', 'Art', 'Design', 'Music', 'Simulation'];
+const categories = ['All', 'Art', 'Design', 'Game', 'Simulation'];
 
 function App() {
   const [selectedCategory, setSelectedCategory] = useState('All');
