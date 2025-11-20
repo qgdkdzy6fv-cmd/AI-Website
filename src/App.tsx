@@ -18,7 +18,7 @@ const prototypes: Prototype[] = [
     id: 1,
     title: 'Metronome Game Prototype',
     description: 'Find your flow, follow the metronome, and let your garden blossom with every perfect beat.',
-    category: 'Music',
+    category: 'Game',
     demoUrl: 'https://metronomegame-prototype.bolt.host',
     githubUrl: 'https://github.com/qgdkdzy6fv-cmd/AI-metronome',
     tags: ['Rhythm Game', 'Music', 'Interactive'],
@@ -79,7 +79,7 @@ const prototypes: Prototype[] = [
   },
 ];
 
-const categories = ['All', 'Art', 'Design', 'Music', 'Simulation'];
+const categories = ['All', 'Art', 'Design', 'Game', 'Music', 'Simulation'];
 
 function App() {
   const [selectedCategory, setSelectedCategory] = useState('All');
