@@ -52,7 +52,7 @@ const prototypes: Prototype[] = [
   },
   {
     id: 8,
-    title: 'New Prototype',
+    title: 'Sound Canvas Prototype',
     description: 'An exciting new prototype to explore.',
     category: 'Art',
     demoUrl: 'https://sound-to-visual-draw-901l.bolt.host',
@@ -255,7 +255,7 @@ function App() {
                     <div className="w-16 h-16 bg-gradient-to-br from-amber-500 to-yellow-600 dark:from-amber-600 dark:to-yellow-700 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg">
                       <Sparkles className="w-8 h-8 text-white" />
                     </div>
-                    <h4 className="text-lg font-bold text-slate-900 dark:text-slate-100 mb-2">New Prototype</h4>
+                    <h4 className="text-lg font-bold text-slate-900 dark:text-slate-100 mb-2">Sound Canvas Prototype</h4>
                     <p className="text-sm text-slate-600 dark:text-slate-400">An exciting new prototype</p>
                   </div>
                   <div className="absolute top-4 right-4">
