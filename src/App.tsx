@@ -51,6 +51,15 @@ const prototypes: Prototype[] = [
     tags: ['Mosaic', 'Creative', 'Art'],
   },
   {
+    id: 8,
+    title: 'New Prototype',
+    description: 'An exciting new prototype to explore.',
+    category: 'Art',
+    demoUrl: 'https://example.com',
+    githubUrl: 'https://github.com/example',
+    tags: ['New', 'Experimental'],
+  },
+  {
     id: 6,
     title: 'Tabletop Map Builder Prototype',
     description: 'Quickly capture your adventure notes and clearly visualize the story as it unfolds.',
