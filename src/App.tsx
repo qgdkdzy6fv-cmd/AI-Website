@@ -55,7 +55,7 @@ const prototypes: Prototype[] = [
     title: 'New Prototype',
     description: 'An exciting new prototype to explore.',
     category: 'Art',
-    demoUrl: 'https://example.com',
+    demoUrl: 'https://sound-to-visual-draw-901l.bolt.host',
     githubUrl: 'https://github.com/example',
     tags: ['New', 'Experimental'],
   },
