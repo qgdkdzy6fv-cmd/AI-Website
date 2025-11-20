@@ -250,9 +250,9 @@ function App() {
                   </div>
                 </div>
               ) : prototype.id === 8 ? (
-                <div className="relative h-52 bg-gradient-to-br from-teal-50 to-cyan-100 dark:from-teal-900 dark:to-cyan-900 overflow-hidden flex items-center justify-center">
+                <div className="relative h-52 bg-gradient-to-br from-amber-50 to-yellow-100 dark:from-amber-900 dark:to-yellow-900 overflow-hidden flex items-center justify-center">
                   <div className="text-center p-8">
-                    <div className="w-16 h-16 bg-gradient-to-br from-teal-500 to-cyan-600 dark:from-teal-600 dark:to-cyan-700 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg">
+                    <div className="w-16 h-16 bg-gradient-to-br from-amber-500 to-yellow-600 dark:from-amber-600 dark:to-yellow-700 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg">
                       <Sparkles className="w-8 h-8 text-white" />
                     </div>
                     <h4 className="text-lg font-bold text-slate-900 dark:text-slate-100 mb-2">New Prototype</h4>
@@ -309,7 +309,7 @@ function App() {
                       rel="noopener noreferrer"
                       className="flex-1 flex items-center justify-center space-x-2 px-4 py-2.5 bg-slate-900 dark:bg-slate-700 text-white dark:text-slate-300 rounded-lg hover:bg-slate-800 dark:hover:bg-slate-600 transition-all duration-200 hover:scale-105"
                     >
-                      <Zap className={`w-4 h-4 animate-pulse-icon ${prototype.id === 1 ? 'text-green-400' : prototype.id === 2 ? 'text-blue-400' : prototype.id === 4 ? '' : prototype.id === 5 ? 'text-cyan-400' : prototype.id === 6 ? 'text-orange-400' : prototype.id === 7 ? 'text-pink-400' : prototype.id === 8 ? 'text-teal-400' : ''}`} style={prototype.id === 4 ? { color: '#8b5cf6' } : undefined} />
+                      <Zap className={`w-4 h-4 animate-pulse-icon ${prototype.id === 1 ? 'text-green-400' : prototype.id === 2 ? 'text-blue-400' : prototype.id === 4 ? '' : prototype.id === 5 ? 'text-cyan-400' : prototype.id === 6 ? 'text-orange-400' : prototype.id === 7 ? 'text-pink-400' : prototype.id === 8 ? 'text-amber-400' : ''}`} style={prototype.id === 4 ? { color: '#8b5cf6' } : undefined} />
                       <span className="text-sm font-medium">Live Demo</span>
                     </a>
                   )}
