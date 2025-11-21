@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect } from 'react';
-import { MoreHorizontal, X } from 'lucide-react';
+import { MoreHorizontal, X, ChevronDown } from 'lucide-react';
 
 interface CategorySliderProps {
   categories: string[];
@@ -9,11 +9,57 @@ interface CategorySliderProps {
 
 export function CategorySlider({ categories, selected, onSelect }: CategorySliderProps) {
   const [isOpen, setIsOpen] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
 
   const handleCategoryClick = (category: string) => {
     onSelect(category);
+    if (isMobile) {
+      setIsOpen(false);
+    }
   };
+
+  if (isMobile) {
+    return (
+      <div ref={containerRef} className="relative">
+        <button
+          onClick={() => setIsOpen(!isOpen)}
+          className="px-4 py-2.5 rounded-lg bg-white dark:bg-slate-800 border-2 border-slate-200 dark:border-slate-700 flex items-center gap-2 hover:bg-slate-50 dark:hover:bg-slate-700 transition-all duration-200 shadow-lg"
+        >
+          <span className="font-medium text-slate-700 dark:text-slate-300">{selected}</span>
+          <ChevronDown className={`w-4 h-4 text-slate-700 dark:text-slate-300 transition-transform duration-200 ${isOpen ? 'rotate-180' : ''}`} />
+        </button>
+
+        {isOpen && (
+          <div className="absolute top-full mt-2 left-0 z-50 w-48 bg-white dark:bg-slate-800 rounded-lg shadow-xl border border-slate-200 dark:border-slate-700 py-2 animate-slide-down">
+            {categories.map((category) => (
+              <button
+                key={category}
+                onClick={() => handleCategoryClick(category)}
+                className={`w-full px-4 py-2.5 text-left font-medium transition-all duration-200 ${
+                  selected === category
+                    ? 'bg-slate-900 dark:bg-slate-100 text-white dark:text-slate-900'
+                    : 'text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700'
+                }`}
+              >
+                {category}
+              </button>
+            ))}
+          </div>
+        )}
+      </div>
+    );
+  }
 
   return (
     <div ref={containerRef} className="relative">
