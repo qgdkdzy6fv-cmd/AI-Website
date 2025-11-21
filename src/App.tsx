@@ -83,7 +83,7 @@ const prototypes: Prototype[] = [
     description: 'An exciting new experimental prototype showcasing innovative AI capabilities.',
     category: 'Art',
     demoUrl: 'https://example.com',
-    githubUrl: 'https://github.com/example/new-prototype',
+    githubUrl: 'https://github.com/qgdkdzy6fv-cmd/Book-cataloging-prototype.git',
     tags: ['Experimental', 'AI', 'Creative'],
   },
 ];
