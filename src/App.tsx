@@ -126,7 +126,7 @@ function App() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-slate-100 dark:from-slate-900 dark:via-slate-800 dark:to-slate-900">
       {/* Header */}
-      <header className="border-b border-slate-200 dark:border-slate-700 bg-white/80 dark:bg-slate-900/80 backdrop-blur-sm sticky top-0 z-50">
+      <header className="border-b border-slate-200 dark:border-slate-700 bg-white/80 dark:bg-slate-900/80 backdrop-blur-sm sticky top-0 z-50 relative">
         <div className="px-4 sm:px-6 lg:px-8 py-3 sm:py-6">
           <div className="max-w-7xl mx-auto flex items-center justify-between">
             <div className="flex items-center space-x-2 sm:space-x-3">
@@ -138,12 +138,12 @@ function App() {
                 <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-400 hidden xs:block">AI Prototypes & Experiments</p>
               </div>
             </div>
-            <div className="flex items-center gap-3 sm:gap-4">
+            <div className="flex items-center gap-3 sm:gap-4 relative z-10">
               <ThemeToggle />
             </div>
           </div>
         </div>
-        <div className="absolute top-3 sm:top-6 right-4 sm:right-6 lg:right-8">
+        <div className="absolute top-3 sm:top-6 right-4 sm:right-6 lg:right-8 z-0">
           <a
             href="https://github.com/qgdkdzy6fv-cmd/AI-Website"
             target="_blank"
