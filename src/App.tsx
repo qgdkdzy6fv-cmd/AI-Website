@@ -1,4 +1,4 @@
-import { Sparkles, Github, ExternalLink, Cpu, Brain, Zap, Music, Palette, Dices, LayoutGrid, Gamepad2, Disc3, Map, Piano, Download, Sparkle, Library } from 'lucide-react';
+import { Sparkles, Github, ExternalLink, Cpu, Brain, Zap, Music, Palette, Dices, LayoutGrid, Gamepad2, Disc3, Map, Piano, Download, Sparkle, Library, ArrowUpDown } from 'lucide-react';
 import { useState } from 'react';
 import { ThemeToggle } from './components/ThemeToggle';
 
@@ -81,21 +81,29 @@ const prototypes: Prototype[] = [
     id: 9,
     title: 'Book Catalog App Prototype',
     description: 'An exciting new experimental prototype showcasing innovative AI capabilities.',
-    category: 'Art',
+    category: 'Organization',
     demoUrl: 'https://example.com',
     githubUrl: 'https://github.com/qgdkdzy6fv-cmd/Book-cataloging-prototype.git',
     tags: ['Experimental', 'AI', 'Creative'],
   },
 ];
 
-const categories = ['All', 'Art', 'Design', 'Game', 'Music', 'Simulation'];
+const categories = ['All', 'Art', 'Design', 'Game', 'Music', 'Simulation', 'Organization'];
 
 function App() {
   const [selectedCategory, setSelectedCategory] = useState('All');
+  const [sortOrder, setSortOrder] = useState<'asc' | 'desc'>('asc');
 
-  const filteredPrototypes = selectedCategory === 'All'
+  const filteredPrototypes = (selectedCategory === 'All'
     ? prototypes
-    : prototypes.filter(p => p.category === selectedCategory);
+    : prototypes.filter(p => p.category === selectedCategory)
+  ).sort((a, b) => {
+    if (sortOrder === 'asc') {
+      return a.title.localeCompare(b.title);
+    } else {
+      return b.title.localeCompare(a.title);
+    }
+  });
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-slate-100 dark:from-slate-900 dark:via-slate-800 dark:to-slate-900">
@@ -143,8 +151,9 @@ function App() {
           </p>
         </div>
 
-        {/* Category Filter */}
-        <div className="flex flex-wrap gap-3 mb-12 justify-center">
+        {/* Category Filter & Sort */}
+        <div className="flex flex-col sm:flex-row items-center justify-between gap-4 mb-12">
+          <div className="flex flex-wrap gap-3 justify-center">
           {categories.map((category) => (
             <button
               key={category}
@@ -158,6 +167,14 @@ function App() {
               {category}
             </button>
           ))}
+          </div>
+          <button
+            onClick={() => setSortOrder(sortOrder === 'asc' ? 'desc' : 'asc')}
+            className="flex items-center gap-2 px-5 py-2.5 bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 rounded-lg font-medium border border-slate-200 dark:border-slate-600 hover:bg-slate-100 dark:hover:bg-slate-700 transition-all duration-200"
+          >
+            <ArrowUpDown className="w-4 h-4" />
+            <span>Sort {sortOrder === 'asc' ? 'A-Z' : 'Z-A'}</span>
+          </button>
         </div>
 
         {/* Prototypes Grid */}
