@@ -71,7 +71,7 @@ const prototypes: Prototype[] = [
   {
     id: 7,
     title: 'Beat Box Visualizer Prototype',
-    description: 'Create stunning artwork with AI-powered generation tools and customize every detail.',
+    description: 'Lay down grooves and watch as the visualizer pulses and flows with every beat.',
     category: 'Music',
     demoUrl: 'https://beat-box-visualize-p-5swm.bolt.host',
     githubUrl: 'https://github.com/qgdkdzy6fv-cmd/rhythm-creator-visualizer.git',
