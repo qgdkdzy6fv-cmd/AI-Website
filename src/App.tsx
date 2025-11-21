@@ -84,7 +84,7 @@ const prototypes: Prototype[] = [
     category: 'Organization',
     demoUrl: 'https://example.com',
     githubUrl: 'https://github.com/qgdkdzy6fv-cmd/Book-cataloging-prototype.git',
-    tags: ['Experimental', 'AI', 'Creative'],
+    tags: ['Cataloging', 'Sorting', 'Tracking'],
   },
 ];
 
