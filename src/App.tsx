@@ -144,11 +144,10 @@ function App() {
                 href="https://github.com/qgdkdzy6fv-cmd/AI-Website"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center space-x-1 sm:space-x-2 px-2 sm:px-4 py-2 bg-slate-900 dark:bg-slate-700 text-white dark:text-slate-300 rounded-lg hover:bg-slate-800 dark:hover:bg-slate-600 transition-all duration-200 hover:scale-105 min-h-[44px]"
+                className="flex items-center justify-center space-x-2 px-3 sm:px-4 py-2 bg-slate-900 dark:bg-slate-700 text-white dark:text-slate-300 rounded-lg hover:bg-slate-800 dark:hover:bg-slate-600 transition-all duration-200 hover:scale-105 min-h-[44px] min-w-[44px] sm:min-w-0"
               >
-                <Github className="w-4 h-4" />
-                <span className="text-xs sm:text-sm font-medium hidden sm:inline">Website GitHub</span>
-                <span className="text-xs font-medium sm:hidden">GitHub</span>
+                <Github className="w-5 h-5 sm:w-4 sm:h-4" />
+                <span className="text-sm font-medium hidden sm:inline">Website GitHub</span>
               </a>
             </div>
           </div>
