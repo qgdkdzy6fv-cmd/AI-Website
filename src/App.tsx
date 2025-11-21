@@ -280,7 +280,7 @@ function App() {
                       <Sparkle className="w-8 h-8 text-white" />
                     </div>
                     <h4 className="text-lg font-bold text-slate-900 dark:text-slate-100 mb-2">New Prototype</h4>
-                    <p className="text-sm text-slate-600 dark:text-slate-400">Experimental AI creation</p>
+                    <p className="text-sm text-slate-600 dark:text-slate-400">Catalog and sort your books</p>
                   </div>
                   <div className="absolute top-4 right-4">
                     <span className="inline-block px-3 py-1 bg-slate-900/80 backdrop-blur-sm text-white text-xs font-medium rounded-full">
