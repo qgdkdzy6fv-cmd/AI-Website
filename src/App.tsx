@@ -1,4 +1,4 @@
-import { Sparkles, Github, ExternalLink, Cpu, Brain, Zap, Music, Palette, Dices, LayoutGrid, Gamepad2, Disc3, Map, Piano } from 'lucide-react';
+import { Sparkles, Github, ExternalLink, Cpu, Brain, Zap, Music, Palette, Dices, LayoutGrid, Gamepad2, Disc3, Map, Piano, Download } from 'lucide-react';
 import { useState } from 'react';
 import { ThemeToggle } from './components/ThemeToggle';
 
@@ -105,6 +105,12 @@ function App() {
             </div>
             <div className="flex items-center gap-4">
               <ThemeToggle />
+              <button
+                className="flex items-center space-x-2 px-4 py-2 bg-blue-600 dark:bg-blue-700 text-white rounded-lg hover:bg-blue-700 dark:hover:bg-blue-600 transition-all duration-200 hover:scale-105"
+              >
+                <Download className="w-4 h-4" />
+                <span className="text-sm font-medium">Download Resumé</span>
+              </button>
               <a
                 href="https://github.com/qgdkdzy6fv-cmd/AI-Website"
                 target="_blank"
