@@ -53,7 +53,7 @@ const prototypes: Prototype[] = [
   {
     id: 8,
     title: 'Sound Canvas Prototype',
-    description: 'Transform your music into dynamic patterns and evolving visuals.',
+    description: 'Transform your music into dynamic patterns and evolving visuals that paint a living canvas.',
     category: 'Art',
     demoUrl: 'https://sound-to-visual-draw-901l.bolt.host',
     githubUrl: 'https://github.com/qgdkdzy6fv-cmd/sound-canvas-prototype.git',
