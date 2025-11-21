@@ -1,4 +1,4 @@
-import { Sparkles, Github, ExternalLink, Cpu, Brain, Zap, Music, Palette, Dices, LayoutGrid, Gamepad2, Disc3, Map, Piano, Download, Sparkle } from 'lucide-react';
+import { Sparkles, Github, ExternalLink, Cpu, Brain, Zap, Music, Palette, Dices, LayoutGrid, Gamepad2, Disc3, Map, Piano, Download, Sparkle, Library } from 'lucide-react';
 import { useState } from 'react';
 import { ThemeToggle } from './components/ThemeToggle';
 
@@ -277,7 +277,7 @@ function App() {
                 <div className="relative h-52 bg-gradient-to-br from-lime-50 to-green-100 dark:from-lime-900 dark:to-green-900 overflow-hidden flex items-center justify-center">
                   <div className="text-center p-8">
                     <div className="w-16 h-16 bg-gradient-to-br from-lime-500 to-green-600 dark:from-lime-600 dark:to-green-700 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg">
-                      <Sparkle className="w-8 h-8 text-white" />
+                      <Library className="w-8 h-8 text-white" />
                     </div>
                     <h4 className="text-lg font-bold text-slate-900 dark:text-slate-100 mb-2">New Prototype</h4>
                     <p className="text-sm text-slate-600 dark:text-slate-400">Catalog and sort your books</p>
