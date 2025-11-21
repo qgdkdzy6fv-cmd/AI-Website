@@ -1,4 +1,4 @@
-import { Sparkles, Github, ExternalLink, Cpu, Brain, Zap, Music, Palette, Dices, LayoutGrid, Gamepad2, Drum, Map } from 'lucide-react';
+import { Sparkles, Github, ExternalLink, Cpu, Brain, Zap, Music, Palette, Dices, LayoutGrid, Gamepad2, Disc3, Map } from 'lucide-react';
 import { useState } from 'react';
 import { ThemeToggle } from './components/ThemeToggle';
 
@@ -238,7 +238,7 @@ function App() {
                 <div className="relative h-52 bg-gradient-to-br from-pink-50 to-rose-100 dark:from-pink-900 dark:to-rose-900 overflow-hidden flex items-center justify-center">
                   <div className="text-center p-8">
                     <div className="w-16 h-16 bg-gradient-to-br from-pink-500 to-rose-600 dark:from-pink-600 dark:to-rose-700 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg">
-                      <Drum className="w-8 h-8 text-white" />
+                      <Disc3 className="w-8 h-8 text-white" />
                     </div>
                     <h4 className="text-lg font-bold text-slate-900 dark:text-slate-100 mb-2">Rhythm Creator + Visualizer</h4>
                     <p className="text-sm text-slate-600 dark:text-slate-400">Create stunning AI artwork</p>
