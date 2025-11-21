@@ -256,7 +256,7 @@ function App() {
                       <Sparkles className="w-8 h-8 text-white" />
                     </div>
                     <h4 className="text-lg font-bold text-slate-900 dark:text-slate-100 mb-2">Sound Canvas Prototype</h4>
-                    <p className="text-sm text-slate-600 dark:text-slate-400">An exciting new prototype</p>
+                    <p className="text-sm text-slate-600 dark:text-slate-400">Create art with music and sound</p>
                   </div>
                   <div className="absolute top-4 right-4">
                     <span className="inline-block px-3 py-1 bg-slate-900/80 backdrop-blur-sm text-white text-xs font-medium rounded-full">
