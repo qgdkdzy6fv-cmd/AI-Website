@@ -167,6 +167,9 @@ function App() {
           <p className="text-xl text-slate-600 dark:text-slate-400 max-w-2xl mx-auto leading-relaxed">
             A collection of experimental prototypes that push the boundaries of coding and design using artificial intelligence.
           </p>
+          <p className="text-xs text-slate-500 dark:text-slate-500 max-w-2xl mx-auto mt-2">
+            Note: Prototypes may not work properly on mobile devices.
+          </p>
         </div>
 
         {/* Category Filter & Sort */}
