@@ -1,6 +1,7 @@
 import { Sparkles, Github, ExternalLink, Cpu, Brain, Zap, Music, Palette, Dices, LayoutGrid, Gamepad2, Disc3, Map, Piano, Download, Sparkle, Library, ArrowUpDown } from 'lucide-react';
 import { useState } from 'react';
 import { ThemeToggle } from './components/ThemeToggle';
+import { SortDropdown, SortOption } from './components/SortDropdown';
 
 interface Prototype {
   id: number;
@@ -90,18 +91,34 @@ const prototypes: Prototype[] = [
 
 const categories = ['All', 'Art', 'Design', 'Game', 'Music', 'Simulation', 'Organization'];
 
+const sortOptions: SortOption[] = [
+  { id: 'name-asc', label: 'Name (A-Z)', value: 'name-asc' },
+  { id: 'name-desc', label: 'Name (Z-A)', value: 'name-desc' },
+  { id: 'date-newest', label: 'Date (Newest first)', value: 'date-newest' },
+  { id: 'date-oldest', label: 'Date (Oldest first)', value: 'date-oldest' },
+  { id: 'relevance', label: 'Relevance/Default', value: 'relevance' },
+];
+
 function App() {
   const [selectedCategory, setSelectedCategory] = useState('All');
-  const [sortOrder, setSortOrder] = useState<'asc' | 'desc'>('asc');
+  const [sortBy, setSortBy] = useState('relevance');
 
   const filteredPrototypes = (selectedCategory === 'All'
     ? prototypes
     : prototypes.filter(p => p.category === selectedCategory)
   ).sort((a, b) => {
-    if (sortOrder === 'asc') {
-      return a.title.localeCompare(b.title);
-    } else {
-      return b.title.localeCompare(a.title);
+    switch (sortBy) {
+      case 'name-asc':
+        return a.title.localeCompare(b.title);
+      case 'name-desc':
+        return b.title.localeCompare(a.title);
+      case 'date-newest':
+        return b.id - a.id;
+      case 'date-oldest':
+        return a.id - b.id;
+      case 'relevance':
+      default:
+        return a.id - b.id;
     }
   });
 
@@ -168,13 +185,11 @@ function App() {
             </button>
           ))}
           </div>
-          <button
-            onClick={() => setSortOrder(sortOrder === 'asc' ? 'desc' : 'asc')}
-            className="flex items-center gap-2 px-5 py-2.5 bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 rounded-lg font-medium border border-slate-200 dark:border-slate-600 hover:bg-slate-100 dark:hover:bg-slate-700 transition-all duration-200"
-          >
-            <ArrowUpDown className="w-4 h-4" />
-            <span>Sort {sortOrder === 'asc' ? 'A-Z' : 'Z-A'}</span>
-          </button>
+          <SortDropdown
+            options={sortOptions}
+            selected={sortBy}
+            onSelect={setSortBy}
+          />
         </div>
 
         {/* Prototypes Grid */}
