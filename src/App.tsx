@@ -79,7 +79,7 @@ const prototypes: Prototype[] = [
   },
   {
     id: 9,
-    title: 'New Prototype',
+    title: 'Book Catalog App Prototype',
     description: 'An exciting new experimental prototype showcasing innovative AI capabilities.',
     category: 'Art',
     demoUrl: 'https://example.com',
