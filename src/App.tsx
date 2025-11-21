@@ -138,12 +138,10 @@ function App() {
                 <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-400 hidden xs:block">AI Prototypes & Experiments</p>
               </div>
             </div>
-            <div className="flex items-center gap-3 sm:gap-4 relative z-10">
-              <ThemeToggle />
-            </div>
           </div>
         </div>
-        <div className="absolute top-3 sm:top-6 right-4 sm:right-6 lg:right-8 z-0">
+        <div className="absolute top-3 sm:top-6 right-4 sm:right-6 lg:right-8 flex items-center gap-3 sm:gap-4">
+          <ThemeToggle />
           <a
             href="https://github.com/qgdkdzy6fv-cmd/AI-Website"
             target="_blank"
