@@ -65,19 +65,20 @@ export function CategorySlider({ categories, selected, onSelect }: CategorySlide
     <div ref={containerRef} className="relative">
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="w-12 h-12 rounded-full bg-white dark:bg-slate-800 border-2 border-slate-200 dark:border-slate-700 flex items-center justify-center hover:bg-slate-50 dark:hover:bg-slate-700 transition-all duration-200 shadow-lg hover:shadow-xl"
+        className="px-4 py-2.5 rounded-lg bg-white dark:bg-slate-800 border-2 border-slate-200 dark:border-slate-700 flex items-center gap-2 hover:bg-slate-50 dark:hover:bg-slate-700 transition-all duration-200 shadow-lg"
         aria-label={isOpen ? 'Close categories' : 'Open categories'}
       >
+        <span className="font-medium text-slate-700 dark:text-slate-300">{selected}</span>
         {isOpen ? (
-          <X className="w-5 h-5 text-slate-700 dark:text-slate-300" />
+          <X className="w-4 h-4 text-slate-700 dark:text-slate-300" />
         ) : (
-          <MoreHorizontal className="w-5 h-5 text-slate-700 dark:text-slate-300" />
+          <MoreHorizontal className="w-4 h-4 text-slate-700 dark:text-slate-300" />
         )}
       </button>
 
       <div
-        className={`absolute left-16 top-1/2 -translate-y-1/2 transition-all duration-300 ${
-          isOpen ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-4 pointer-events-none'
+        className={`absolute left-0 top-full mt-2 transition-all duration-300 ${
+          isOpen ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-2 pointer-events-none'
         }`}
       >
         <div className="flex gap-3 bg-white dark:bg-slate-800 rounded-2xl p-3 shadow-xl border border-slate-200 dark:border-slate-700">
