@@ -170,7 +170,7 @@ function App() {
         </div>
 
         {/* Category Filter & Sort */}
-        <div className="flex flex-col sm:flex-row items-center justify-between gap-4 mb-12">
+        <div className="flex items-center justify-between gap-4 mb-12">
           <CategorySlider
             categories={categories}
             selected={selectedCategory}
