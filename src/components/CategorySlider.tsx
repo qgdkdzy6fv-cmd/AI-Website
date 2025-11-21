@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect } from 'react';
-import { MoreHorizontal, X, ChevronDown } from 'lucide-react';
+import { ChevronRight, X, ChevronDown } from 'lucide-react';
 
 interface CategorySliderProps {
   categories: string[];
@@ -72,13 +72,13 @@ export function CategorySlider({ categories, selected, onSelect }: CategorySlide
         {isOpen ? (
           <X className="w-4 h-4 text-slate-700 dark:text-slate-300" />
         ) : (
-          <MoreHorizontal className="w-4 h-4 text-slate-700 dark:text-slate-300" />
+          <ChevronRight className="w-4 h-4 text-slate-700 dark:text-slate-300" />
         )}
       </button>
 
       <div
-        className={`absolute left-0 top-full mt-2 transition-all duration-300 ${
-          isOpen ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-2 pointer-events-none'
+        className={`absolute left-full ml-2 top-1/2 -translate-y-1/2 transition-all duration-300 ${
+          isOpen ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-2 pointer-events-none'
         }`}
       >
         <div className="flex gap-3 bg-white dark:bg-slate-800 rounded-2xl p-3 shadow-xl border border-slate-200 dark:border-slate-700">
