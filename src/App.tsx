@@ -168,7 +168,7 @@ function App() {
             A collection of experimental prototypes that push the boundaries of coding and design using artificial intelligence.
           </p>
           <p className="text-xs text-slate-500 dark:text-slate-500 max-w-2xl mx-auto mt-2">
-            Note: Prototypes may not work properly on mobile devices.
+            *Prototypes may not work properly on mobile devices.
           </p>
         </div>
 
