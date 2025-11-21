@@ -57,7 +57,7 @@ const prototypes: Prototype[] = [
     category: 'Art',
     demoUrl: 'https://sound-to-visual-draw-901l.bolt.host',
     githubUrl: 'https://github.com/qgdkdzy6fv-cmd/sound-canvas-prototype.git',
-    tags: ['New', 'Experimental'],
+    tags: ['Music', 'Art', 'Interactive'],
   },
   {
     id: 6,
