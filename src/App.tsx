@@ -2,6 +2,7 @@ import { Sparkles, Github, Cpu, Brain, Zap, Music, Palette, Dices, LayoutGrid, D
 import { useState } from 'react';
 import { ThemeToggle } from './components/ThemeToggle';
 import { SortDropdown, SortOption } from './components/SortDropdown';
+import { CategorySlider } from './components/CategorySlider';
 
 interface Prototype {
   id: number;
