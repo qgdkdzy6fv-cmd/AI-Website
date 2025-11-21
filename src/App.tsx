@@ -156,7 +156,7 @@ function App() {
 
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         {/* Hero Section */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-8 md:mb-16">
           <div className="inline-flex items-center space-x-2 px-4 py-2 bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 rounded-full mb-6">
             <Sparkles className="w-4 h-4" />
             <span className="text-sm font-medium">Crafted with AI</span>
@@ -173,7 +173,7 @@ function App() {
         </div>
 
         {/* Category Filter & Sort */}
-        <div className="flex items-center justify-between gap-4 mb-12">
+        <div className="flex items-center justify-between gap-4 mb-6 md:mb-12">
           <CategorySlider
             categories={categories}
             selected={selectedCategory}
