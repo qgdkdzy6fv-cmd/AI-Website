@@ -391,8 +391,8 @@ function App() {
       {/* Footer */}
       <footer className="border-t border-slate-200 dark:border-slate-700 bg-white/80 dark:bg-slate-900/80 backdrop-blur-sm mt-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-          <p className="text-center text-slate-600 dark:text-slate-400">
-            Built with curiosity and a passion for AI innovation
+          <p className="text-center text-slate-600 dark:text-slate-400 text-sm sm:text-base">
+            Built with curiosity and a passion for AI
           </p>
         </div>
       </footer>
