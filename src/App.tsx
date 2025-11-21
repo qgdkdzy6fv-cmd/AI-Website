@@ -82,7 +82,7 @@ const prototypes: Prototype[] = [
     title: 'Book Catalog App Prototype',
     description: 'An exciting new experimental prototype showcasing innovative AI capabilities.',
     category: 'Organization',
-    demoUrl: 'https://example.com',
+    demoUrl: 'https://personal-book-catalo-0wsp.bolt.host',
     githubUrl: 'https://github.com/qgdkdzy6fv-cmd/Book-cataloging-prototype.git',
     tags: ['Cataloging', 'Sorting', 'Tracking'],
   },
