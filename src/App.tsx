@@ -296,7 +296,7 @@ function App() {
                     <div className="w-16 h-16 bg-gradient-to-br from-lime-500 to-green-600 dark:from-lime-600 dark:to-green-700 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg">
                       <Library className="w-8 h-8 text-white" />
                     </div>
-                    <h4 className="text-lg font-bold text-slate-900 dark:text-slate-100 mb-2">New Prototype</h4>
+                    <h4 className="text-lg font-bold text-slate-900 dark:text-slate-100 mb-2">Book Catalog App</h4>
                     <p className="text-sm text-slate-600 dark:text-slate-400">Catalog and sort your books</p>
                   </div>
                   <div className="absolute top-4 right-4">
