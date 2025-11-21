@@ -1,4 +1,4 @@
-import { Sparkles, Github, ExternalLink, Cpu, Brain, Zap, Music, Palette, Dices, LayoutGrid, Gamepad2, Disc3, Map, Piano, Download, Sparkle, Library, ArrowUpDown } from 'lucide-react';
+import { Sparkles, Github, Cpu, Brain, Zap, Music, Palette, Dices, LayoutGrid, Disc3, Map, Piano, Library } from 'lucide-react';
 import { useState } from 'react';
 import { ThemeToggle } from './components/ThemeToggle';
 import { SortDropdown, SortOption } from './components/SortDropdown';
