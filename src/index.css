@@ -70,6 +70,11 @@
   html {
     overflow-x: hidden;
     height: 100%;
+    background: linear-gradient(to bottom right, #f8fafc, #eff6ff, #f8fafc);
+  }
+
+  html.dark {
+    background: linear-gradient(to bottom right, #0f172a, #1e293b, #0f172a);
   }
 
   body {
@@ -78,11 +83,13 @@
     min-height: -webkit-fill-available;
     margin: 0;
     padding: 0;
+    background: transparent;
   }
 
   #root {
     min-height: 100vh;
     min-height: -webkit-fill-available;
+    background: transparent;
   }
 }
 
