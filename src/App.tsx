@@ -126,7 +126,7 @@ function App() {
   return (
     <div className="min-h-screen">
       {/* Header */}
-      <header className="border-b border-slate-200 dark:border-slate-700 bg-white/80 dark:bg-slate-900/80 backdrop-blur-sm sticky top-0 z-50 relative">
+      <header className="border-b border-slate-200 dark:border-slate-700 bg-white/80 dark:bg-slate-900/80 backdrop-blur-sm sticky z-50 relative" style={{ top: 0, marginTop: 'calc(-1 * env(safe-area-inset-top))', paddingTop: 'calc(env(safe-area-inset-top))' }}>
         <div className="px-4 sm:px-6 lg:px-8 py-3 sm:py-6">
           <div className="max-w-7xl mx-auto flex items-center justify-between">
             <div className="flex items-center space-x-2 sm:space-x-3">
